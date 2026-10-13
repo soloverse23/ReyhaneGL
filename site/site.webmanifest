@@ -1,0 +1,13 @@
+{
+  "name": "Reyhaneh Golestani · Employer Branding",
+  "short_name": "Reyhaneh",
+  "description": "Employer branding work by Reyhaneh Golestani, told as a painting in six chapters.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FBFAF7",
+  "theme_color": "#FBFAF7",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
