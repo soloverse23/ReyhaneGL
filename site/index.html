@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Reyhaneh Golestani · Employer Branding</title>
-<meta name="description" content="Application for Employer Branding Senior Specialist, Deloitte Central Europe. How Reyhaneh Golestani turned twelve ventures into one employer brand, told as a painting in six chapters.">
+<meta name="description" content="Employer branding portfolio. How Reyhaneh Golestani turned twelve ventures into one employer brand, told as a painting in six chapters.">
 <meta name="author" content="Reyhaneh Golestani">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#FBFAF7">
@@ -443,6 +443,7 @@ a.fact:hover{border-color:var(--ac)}
 .fitlist{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:18px;background:var(--surface);overflow:hidden}
 .fitrow{display:grid;grid-template-columns:minmax(0,1.05fr) 132px minmax(0,1.6fr) 118px;gap:18px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
 .fitrow:last-child{border-bottom:0}
+.fitlist.plain .fitrow{grid-template-columns:minmax(0,1.05fr) 132px minmax(0,1.6fr)}
 .fitrow h3{font:700 1rem/1.3 var(--f-body);letter-spacing:0}
 .fitrow p{font-size:.9rem;color:var(--ink-2)}
 .thr{display:flex;align-items:center;gap:0}
@@ -521,6 +522,7 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   .cats{grid-template-columns:repeat(3,minmax(0,1fr))}
   .film{grid-template-columns:repeat(2,minmax(0,1fr))}
   .fitrow{grid-template-columns:minmax(0,1fr) auto;gap:8px 16px}
+  .fitlist.plain .fitrow{grid-template-columns:minmax(0,1fr)}
   .fitrow h3{grid-column:1}
   .fitrow .pill{grid-column:2;grid-row:1}
   .fitrow .thr{grid-column:1/-1}
@@ -612,6 +614,13 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
 .g-ring.inside span{bottom:auto;top:max(8px,calc(104px - var(--rt,0px)))}
 .g-ring.inside span::after{display:none}
 .g-ring.done{border-color:var(--v4);box-shadow:0 0 0 6px color-mix(in srgb,var(--v4) 20%,transparent);animation:none}
+.g-intro{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;background:rgba(28,27,36,.45);animation:gfade .25s ease-out}
+.g-pop{position:relative;width:min(420px,100%);background:var(--surface);color:var(--ink);border:1px solid var(--line-2);border-radius:20px;box-shadow:0 24px 64px rgba(28,27,36,.3);padding:22px 22px 18px;display:grid;gap:10px;animation:gpop .25s ease-out}
+.g-pop .g-x{position:absolute;top:12px;right:12px}
+.g-pop h2{font:700 1.35rem/1.2 var(--f-display);letter-spacing:-.01em;padding-right:36px}
+.g-pop .g-nav{margin-top:6px}
+@keyframes gfade{from{opacity:0}}
+@keyframes gpop{from{opacity:0;transform:translateY(10px) scale(.97)}}
 @keyframes gpulse{50%{box-shadow:0 0 0 12px color-mix(in srgb,var(--accent) 5%,transparent)}}
 @media (max-width:640px){
   .prologue{padding:48px 0 0 36px}
@@ -664,7 +673,7 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   <main id="top">
     <section class="hero" aria-labelledby="h1">
       <div>
-        <div class="eyebrow mono"><span>Application</span><span>Employer Branding Senior Specialist</span><span>Deloitte Central Europe · Bucharest</span></div>
+        <div class="eyebrow mono"><span>Portfolio</span><span>Employer branding</span><span>Based in Romania</span></div>
         <h1 id="h1">Build the promise. <em>Then build the places people meet it.</em></h1>
         <p class="who"><strong>Reyhaneh Golestani.</strong> I lead employer branding for Snapp Group's twelve companies.</p>
         <a class="employer" href="https://careers.snappgroup.net/en" target="_blank" rel="noopener" aria-label="Snapp Group careers site"><span class="mono">Since Sep 2022 at</span><svg role="img" aria-label="Snapp Group"><use href="#sgWordmark"/></svg></a>
@@ -678,7 +687,7 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 2v12M3 9l5 5 5-5"/></svg></a>
           <button class="btn" type="button" data-guide-start>
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="m10.8 5.2-1.7 3.9-3.9 1.7 1.7-3.9z"/></svg>Guide me through it</button>
-          <a class="btn" href="#fit">Fit with the role</a>
+          <a class="btn" href="#fit">What I bring</a>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true">
@@ -1164,17 +1173,16 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
 
   <!-- FIT -->
   <section class="block" id="fit" aria-labelledby="fith">
-    <h2 id="fith">Every line of the posting, tied to the thread</h2>
+    <h2 id="fith">What I bring, tied to the thread</h2>
     <p class="lede">Each bead links to the proof.</p>
-    <ol class="fitlist">
-      <li class="fitrow"><h3>University partnerships and career fairs</h3><span class="thr"><a href="#act-5" style="--c:var(--v11)" aria-label="Chapter 5">5</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Three fairs, #5 → #2 of 50. Polaris across four universities.</p><span class="pill strong">Strong</span></li>
-      <li class="fitrow"><h3>Student events, start to finish</h3><span class="thr"><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Bootcamp end to end: 250 → 33 → 4 hires. Finance Talk for ~300 students.</p><span class="pill strong">Strong</span></li>
-      <li class="fitrow"><h3>Local strategy and budget</h3><span class="thr"><a href="#act-2" style="--c:var(--v3)" aria-label="Chapter 2">2</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Group EVP plan. Finance Talk delivered on 70% of budget.</p><span class="pill strong">Strong</span></li>
-      <li class="fitrow"><h3>Campaigns and materials</h3><span class="thr"><a href="#act-4" style="--c:var(--v7)" aria-label="Chapter 4">4</a><a href="#act-5" style="--c:var(--v11)" aria-label="Chapter 5">5</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Booths, slogans, LinkedIn for every event, landing pages.</p><span class="pill strong">Strong</span></li>
-      <li class="fitrow"><h3>Excel and data analysis</h3><span class="thr"><a href="#act-2" style="--c:var(--v3)" aria-label="Chapter 2">2</a><a href="#act-3" style="--c:var(--v9)" aria-label="Chapter 3">3</a><a href="#act-4" style="--c:var(--v7)" aria-label="Chapter 4">4</a></span><p>1,268-person EVP research, daily site report, quarterly goals.</p><span class="pill strong">Strong</span></li>
-      <li class="fitrow"><h3>Regional coordination</h3><span class="thr"><a href="#act-1" style="--c:var(--v1)" aria-label="Chapter 1">1</a><a href="#act-3" style="--c:var(--v9)" aria-label="Chapter 3">3</a></span><p>Twelve ventures into one brand, page and booth.</p><span class="pill partial">Transferable</span></li>
-      <li class="fitrow"><h3>Contracts, invoices, vendors</h3><span class="thr"></span><p>Managed project budgets.</p><span class="pill partial">Partial</span></li>
-      <li class="fitrow"><h3>Fluent Romanian and English</h3><span class="thr"></span><p>English, Turkish: professional. Romanian: A2, learning.</p><span class="pill building">Building</span></li>
+    <ol class="fitlist plain">
+      <li class="fitrow"><h3>University partnerships and career fairs</h3><span class="thr"><a href="#act-5" style="--c:var(--v11)" aria-label="Chapter 5">5</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Three fairs, #5 → #2 of 50. Polaris across four universities.</p></li>
+      <li class="fitrow"><h3>Student events, start to finish</h3><span class="thr"><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Bootcamp end to end: 250 → 33 → 4 hires. Finance Talk for ~300 students.</p></li>
+      <li class="fitrow"><h3>Local strategy and budget</h3><span class="thr"><a href="#act-2" style="--c:var(--v3)" aria-label="Chapter 2">2</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Group EVP plan. Finance Talk delivered on 70% of budget.</p></li>
+      <li class="fitrow"><h3>Campaigns and materials</h3><span class="thr"><a href="#act-4" style="--c:var(--v7)" aria-label="Chapter 4">4</a><a href="#act-5" style="--c:var(--v11)" aria-label="Chapter 5">5</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Booths, slogans, LinkedIn for every event, landing pages.</p></li>
+      <li class="fitrow"><h3>Excel and data analysis</h3><span class="thr"><a href="#act-2" style="--c:var(--v3)" aria-label="Chapter 2">2</a><a href="#act-3" style="--c:var(--v9)" aria-label="Chapter 3">3</a><a href="#act-4" style="--c:var(--v7)" aria-label="Chapter 4">4</a></span><p>1,268-person EVP research, daily site report, quarterly goals.</p></li>
+      <li class="fitrow"><h3>Coordination across brands</h3><span class="thr"><a href="#act-1" style="--c:var(--v1)" aria-label="Chapter 1">1</a><a href="#act-3" style="--c:var(--v9)" aria-label="Chapter 3">3</a></span><p>Twelve ventures into one brand, page and booth.</p></li>
+      <li class="fitrow"><h3>Languages</h3><span class="thr"></span><p>English, Turkish: professional. Romanian: A2, learning.</p></li>
     </ol>
   </section>
 
@@ -1182,9 +1190,9 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   <section class="block" id="plan" aria-labelledby="planh">
     <h2 id="planh">Same thread, new canvas: my first 90 days</h2>
     <ol class="plan3">
-      <li style="--c:var(--v1)"><span class="mono">Days 1–30</span><h3>Ask</h3><p class="echo">Like chapter 1 · the blank canvas</p><ul><li>Meet the CE team and Romania's talent leads</li><li>Learn Deloitte's EVP, brand rules, approvals</li><li>Map universities, fairs, vendors, last year's budget</li></ul></li>
-      <li style="--c:var(--v3)"><span class="mono">Days 31–60</span><h3>Build</h3><p class="echo">Like chapters 2–4 · palette, frame, layers</p><ul><li>Romania's plan and budget, aligned regionally</li><li>Excel scorecard: cost per résumé and per hire</li><li>Refresh campus materials within the brand</li></ul></li>
-      <li style="--c:var(--v11)"><span class="mono">Days 61–90</span><h3>Meet</h3><p class="echo">Like chapters 5–6 · exhibition, deepen</p><ul><li>Run the first student event, report on the scorecard</li><li>Share what worked across Central Europe</li><li>Propose next year's partner calendar</li></ul></li>
+      <li style="--c:var(--v1)"><span class="mono">Days 1–30</span><h3>Ask</h3><p class="echo">Like chapter 1 · the blank canvas</p><ul><li>Meet the team and the talent leads</li><li>Learn the EVP, brand rules, approvals</li><li>Map universities, fairs, vendors, last year's budget</li></ul></li>
+      <li style="--c:var(--v3)"><span class="mono">Days 31–60</span><h3>Build</h3><p class="echo">Like chapters 2–4 · palette, frame, layers</p><ul><li>A local plan and budget, aligned with the wider brand</li><li>Excel scorecard: cost per résumé and per hire</li><li>Refresh campus materials within the brand</li></ul></li>
+      <li style="--c:var(--v11)"><span class="mono">Days 61–90</span><h3>Meet</h3><p class="echo">Like chapters 5–6 · exhibition, deepen</p><ul><li>Run the first student event, report on the scorecard</li><li>Share what worked with the wider team</li><li>Propose next year's partner calendar</li></ul></li>
     </ol>
   </section>
 
@@ -1192,7 +1200,7 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   <section class="contact" id="contact" aria-labelledby="ch">
     <div>
       <h2 id="ch">Let's talk</h2>
-      <p class="lede">Based in Romania. Ready for the assessment.</p>
+      <p class="lede">Based in Romania. Open to employer branding roles.</p>
       <div class="cta">
         <a class="btn primary" href="assets/Reyhaneh_Golestani_CV.pdf" target="_blank" rel="noopener">Open the PDF résumé</a>
         <a class="btn" href="https://www.linkedin.com/in/reyhanegolestani" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -1216,6 +1224,16 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   <div aria-live="polite"><h2 id="gH" tabindex="-1"></h2><p class="g-p" id="gP"></p><p class="g-ok" id="gOk" hidden></p></div>
   <div class="g-nav" id="gNav"></div>
   <p class="g-foot" id="gFoot"></p>
+</div>
+<div class="g-intro" id="gIntro" hidden>
+  <div class="g-pop" role="dialog" aria-modal="true" aria-labelledby="giH" aria-describedby="giP">
+    <button class="g-x" type="button" id="giX" aria-label="Close">&times;</button>
+    <span class="g-ch mono">New here?</span>
+    <h2 id="giH">Want me to show you around?</h2>
+    <p class="g-p" id="giP">About three minutes: a line to read here, a button to press there. Leave whenever you like.</p>
+    <div class="g-nav"><button class="btn small g-first" type="button" id="giNo">No thanks</button><button class="btn small primary" type="button" id="giGo">Start the guide</button></div>
+    <p class="g-foot">You can start it later from Guide at the top.</p>
+  </div>
 </div>
 <div class="g-ring" id="gRing" aria-hidden="true" hidden><span id="gTag"></span></div>
 
@@ -1579,10 +1597,12 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
       {g:6,t:"#uniPanel .eps",v:"#polVid",c:"var(--v4)",ch:"Colors that deepen · optional",h:"Switch to <b>Story 2</b>",p:"Two graduates, in their own words.",
         done:function(){return pressedAt("#uniPanel .eps button",1);},ok:"Press play whenever you like."},
       {g:6,r:1,t:"#act-6 .kept",c:"var(--v4)",ch:"Colors that deepen",h:"The promise, kept",p:"Chapter 2's pillar, proven here."},
-      {g:7,r:1,t:"#fit",c:"var(--accent)",ch:"Fit with the role",h:"Each line, tied to a chapter",p:"Tap a numbered bead for the proof."},
-      {g:7,r:1,t:"#plan",c:"var(--accent)",ch:"A new canvas",h:"My first 90 days",p:"The same moves, at Deloitte."},
+      {g:7,r:1,t:"#fit",c:"var(--accent)",ch:"What I bring",h:"Each line, tied to a chapter",p:"Tap a numbered bead for the proof."},
+      {g:7,r:1,t:"#plan",c:"var(--accent)",ch:"A new canvas",h:"My first 90 days",p:"The same moves, on a new team."},
       {g:7,r:1,t:"#contact",c:"var(--accent)",ch:"The end",h:"Let's talk",p:"Copy email or phone in one tap.",last:true}
     ];
+    // Remembers that the visitor answered the first-visit popup (v2: earlier visitors get it once more).
+    var SEEN="rg-guide-v2";
     var i=0,on=false,opener=null,raf=0,watching=false;
     STOPS.forEach(function(s){var d=document.createElement("i");d.style.setProperty("--c",s.c);$("#gProg").appendChild(d);});
     var bars=$$("#gProg i");
@@ -1647,32 +1667,28 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
     }
     function end(finished){
       on=false;guideOn=false;card.hidden=true;ring.hidden=true;
-      store("rg-guide","seen");if(finished)store("rg-guide-i","0");
+      store(SEEN,"seen");if(finished)store("rg-guide-i","0");
       if(opener&&document.contains(opener))opener.focus({preventScroll:true});
     }
     $("#gX").addEventListener("click",function(){end(false);});
-    $$("[data-guide-start]").forEach(function(b){b.addEventListener("click",function(){opener=b;clearTimeout(offerT);if(on)show(i);else start();});});
+    $$("[data-guide-start]").forEach(function(b){b.addEventListener("click",function(){opener=b;closeIntro();if(on)show(i);else start();});});
 
-    // A one-time, quiet offer for first-time visitors. Dismissed once, never shown again.
-    var offerT=null;
-    function offer(){
-      if(on||store("rg-guide"))return;
-      store("rg-guide","offered");card.hidden=false;
-      $("#gCh").textContent="New here?";$("#gProg").hidden=true;
-      $("#gH").textContent="Want me to show you around?";
-      $("#gP").textContent="About three minutes: a line to read here, a button to press there. Leave whenever you like.";
-      $("#gOk").hidden=true;nav.innerHTML="";
-      btn("No thanks","g-first",function(){card.hidden=true;});
-      btn("Start the guide","primary",function(){card.hidden=true;opener=$("#guideBtn");start(0);});
-      $("#gFoot").textContent="You can start it later from Guide at the top.";
-    }
-    if(!store("rg-guide")){
-      var fire=function(){window.removeEventListener("scroll",onS);clearTimeout(offerT);offer();};
-      var onS=function(){if(window.scrollY>240)fire();};
-      window.addEventListener("scroll",onS,{passive:true});
-      offerT=setTimeout(fire,7000);
-      document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!on&&!card.hidden)card.hidden=true;});
-    }
+    // First visit: a simple centered popup. Remembered only once the visitor answers it.
+    var intro=$("#gIntro"),introFrom=null;
+    function closeIntro(){if(intro.hidden)return;intro.hidden=true;store(SEEN,"seen");if(introFrom&&document.contains(introFrom))introFrom.focus({preventScroll:true});}
+    $("#giNo").addEventListener("click",closeIntro);
+    $("#giX").addEventListener("click",closeIntro);
+    $("#giGo").addEventListener("click",function(){introFrom=null;closeIntro();opener=$("#guideBtn");start(0);});
+    intro.addEventListener("click",function(e){if(e.target===intro)closeIntro();});
+    document.addEventListener("keydown",function(e){
+      if(intro.hidden)return;
+      if(e.key==="Escape"){closeIntro();return;}
+      // Keep Tab inside the popup while it is open.
+      if(e.key==="Tab"){var f=$$("button",intro),a=f[0],z=f[f.length-1];
+        if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}
+        else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}
+    });
+    if(!store(SEEN))setTimeout(function(){if(on||store(SEEN))return;introFrom=document.activeElement;intro.hidden=false;$("#giGo").focus({preventScroll:true});},700);
   })();
 
   /* Copy */
