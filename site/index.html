@@ -7,9 +7,8 @@
 <meta name="description" content="Application for Employer Branding Senior Specialist, Deloitte Central Europe. How Reyhaneh Golestani turned twelve ventures into one employer brand, told as a painting in six chapters.">
 <meta name="author" content="Reyhaneh Golestani">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#14131A" media="(prefers-color-scheme: dark)">
-<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBFAF7">
+<meta name="color-scheme" content="light">
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
@@ -43,21 +42,7 @@
   --f-body:"Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --f-mono:"Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --s-1:.8125rem; --s0:1rem; --s1:1.1875rem; --s2:1.5rem; --s3:clamp(1.75rem,3.6vw,2.6rem); --s4:clamp(2.25rem,5.6vw,4.25rem);
-  --cbar-h:34px;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#14131A; --surface:#1D1C25; --ink:#EEEDF4; --ink-2:#A7A5B7; --line:#2F2D3A; --line-2:#413F4E;
-    --accent:#FF6A32; --accent-ink:#FF8C5E; --tint:#35201A; --navy:#D9D8E4; --taupe:#C6AA90;
-    --shade:rgba(255,106,50,.11); --canvas:#1A1921; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.25);
-    --v8:#6684E0; --v1:#B06AD0; --deck:#33343A; --deck-2:#4A4C53; --sg:#e9eef7; color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#14131A; --surface:#1D1C25; --ink:#EEEDF4; --ink-2:#A7A5B7; --line:#2F2D3A; --line-2:#413F4E;
-  --accent:#FF6A32; --accent-ink:#FF8C5E; --tint:#35201A; --navy:#D9D8E4; --taupe:#C6AA90;
-  --shade:rgba(255,106,50,.11); --canvas:#1A1921; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.25);
-  --v8:#6684E0; --v1:#B06AD0; --deck:#33343A; --deck-2:#4A4C53; --sg:#e9eef7; color-scheme:dark;
+  --cbar-h:34px; color-scheme:light;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--cbar-h) + 64px)}
@@ -671,9 +656,6 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 1.5h5.5L12.5 4.5V14.5H4z"/><path d="M9.5 1.5v3h3"/></svg>
         <span class="btn-text">PDF résumé</span>
       </a>
-      <button class="btn small icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="3.2"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3 3l1.1 1.1M11.9 11.9 13 13M3 13l1.1-1.1M11.9 4.1 13 3"/></svg>
-      </button>
     </div>
   </header>
 
@@ -1257,15 +1239,6 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   }
   // A chain of timed steps that any user click cancels.
   function Player(){var t=null;return{run:function(delays,fn){var i=0;var self=this;self.stop();(function next(){if(i>=delays.length)return;t=setTimeout(function(){fn(i);i++;next();},delays[i]);})();},stop:function(){clearTimeout(t);t=null;}};}
-
-  /* Theme */
-  var tBtn = $("#themeToggle");
-  function effectiveDark(){var t=root.getAttribute("data-theme");if(t)return t==="dark";return window.matchMedia("(prefers-color-scheme: dark)").matches;}
-  function syncThemeLabel(){tBtn.setAttribute("aria-label", effectiveDark()?"Switch to light theme":"Switch to dark theme");}
-  var savedTheme = store("rg-theme"); if(savedTheme==="dark"||savedTheme==="light") root.setAttribute("data-theme",savedTheme);
-  syncThemeLabel();
-  tBtn.addEventListener("click",function(){var next=effectiveDark()?"light":"dark";root.setAttribute("data-theme",next);store("rg-theme",next);syncThemeLabel();});
-
 
   /* Hero art */
   (function(){
