@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reyhaneh Golestani · Employer Branding</title>
+<meta name="description" content="Build the promise. Then build the places people meet it. Employer branding work by Reyhaneh Golestani, told as one story in six acts.">
+<meta property="og:title" content="Reyhaneh Golestani · Employer Branding">
+<meta property="og:description" content="Build the promise. Then build the places people meet it. Six acts: identity, EVP, career page, LinkedIn, job fairs, university programs.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..800,0..100&family=Nunito:ital,wght@0,400..800;1,400..700&family=Vazirmatn:wght@400;700&display=swap">
+<style>
+/* Layout: one thread runs down a light canvas; each act is a panel strung on it, max 1100px. */
+:root{color-scheme:light;
+  --bg:#F6F6F8; --surface:#FFFFFF; --ink:#1C1B24; --ink-2:#575569; --line:#E2E1E9; --line-2:#CFCDD9;
+  --accent:#E24E12; --accent-ink:#B23C0A; --tint:#FDEDE5; --navy:#2E2D3B; --taupe:#8E735C;
+  --shade:rgba(226,78,18,.08); --canvas:#FBFAF7; --shadow:0 1px 2px rgba(28,27,36,.05),0 8px 28px rgba(28,27,36,.06);
+  --v1:#8E44AD; --v2:#D64541; --v3:#D6337F; --v4:#2FAF62; --v5:#E8A913; --v6:#E86A92;
+  --v7:#3AA6DD; --v8:#1F3A93; --v9:#3E7BEF; --v10:#239A91; --v11:#EE7A30; --v12:#7CB342;
+  --f-display:"Fraunces", Georgia, "Times New Roman", serif;
+  --f-body:"Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --s-1:.8125rem; --s0:1rem; --s1:1.1875rem; --s2:1.5rem; --s3:clamp(1.75rem,3.4vw,2.5rem); --s4:clamp(2.25rem,5.6vw,4.25rem);
+  --r:14px; --cbar-h:34px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--s0)/1.6 var(--f-body);font-variation-settings:"SOFT" 100;overflow-x:hidden}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance;font-weight:700}
+p{margin:0}
+a{color:var(--accent-ink);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+html{scroll-padding-top:calc(var(--cbar-h) + 64px)}
+.wrap{max-width:1100px;margin-inline:auto;padding-inline:16px}
+.mono{font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.06em;text-transform:uppercase}
+.muted{color:var(--ink-2)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--surface);padding:8px 12px;z-index:50}
+.skip:focus{left:16px}
+.btn{font:600 .9375rem/1 var(--f-body);display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);text-decoration:none;cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.small{padding:8px 12px;font-size:.8125rem}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* Placeholder markers */
+.mk{display:inline-block;max-width:100%;white-space:normal;font:500 .72rem/1.3 var(--f-mono);letter-spacing:.04em;color:var(--accent-ink);border:1.5px dashed var(--accent);border-radius:6px;padding:2px 7px;background:var(--tint);vertical-align:middle;text-transform:none}
+span.mk b{font:600 1em/1.3 var(--f-mono);letter-spacing:.08em;color:inherit}
+.hide-mk .mk{display:none!important}
+
+/* Contact bar */
+.cbar{position:sticky;top:0;z-index:21;height:var(--cbar-h);background:var(--ink);color:var(--bg);padding-top:env(safe-area-inset-top,0px);box-sizing:content-box}
+.cbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:100%}
+.cbar-lbl{color:color-mix(in srgb,var(--bg) 62%,transparent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.cbar-lbl i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle}
+.cbar ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:4px;flex:none}
+.cbar a{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;color:inherit;text-decoration:none;font:500 .78rem/1 var(--f-body);transition:background .15s}
+.cbar a:hover{background:color-mix(in srgb,var(--bg) 14%,transparent)}
+.cbar svg{width:13px;height:13px;flex:none}
+
+/* Header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:18px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:700;font-size:1.0625rem;text-decoration:none;color:var(--ink)}
+.brand i{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:16px 0 0 -2px var(--v7),30px 0 0 -3px var(--v4);margin-right:26px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.icon-btn{width:40px;height:40px;padding:0;justify-content:center}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:center;padding-block:28px 40px}
+.eyebrow{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--ink-2);margin-bottom:18px}
+.eyebrow span+span::before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--taupe);margin-right:14px;vertical-align:middle}
+.hero h1{font-size:var(--s4);font-weight:750;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.employer{display:inline-flex;align-items:center;gap:14px;margin-top:18px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--sg);text-decoration:none}
+.employer span{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.employer svg{width:88px;height:52px;fill:currentColor}
+:root{--sg:#003278}
+.hero .who{margin-top:20px;font-size:var(--s1);max-width:36ch;color:var(--ink-2)}
+.hero .who strong{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.hero-art{position:relative;aspect-ratio:1/1;max-width:100%;background:var(--canvas);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
+.hero-art svg{width:100%;height:100%}
+.hero-art .cap{position:absolute;left:14px;bottom:12px;color:var(--ink-2);font-size:.68rem}
+.bob{animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line);margin-bottom:56px}
+.stat{padding:18px 16px 18px 0;display:grid;gap:4px}
+.stat+.stat{border-left:1px solid var(--line);padding-left:18px}
+.stat b{font:700 clamp(1.6rem,3.4vw,2.25rem)/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat span{font-size:.875rem;color:var(--ink-2);line-height:1.4}
+
+/* 30-second */
+.short{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:32px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow);margin-bottom:64px}
+.short h2{font-size:var(--s3)}
+.short .lbl{color:var(--accent-ink);margin-bottom:10px}
+.short p.body{font-size:1.0625rem;line-height:1.7;max-width:66ch}
+.short .sig{margin-top:16px;color:var(--ink-2);font-size:.9rem}
+.spine{margin-top:16px;font-family:var(--f-display);font-weight:600;font-size:1.0625rem;color:var(--ink-2)}
+
+/* Rail */
+.rail{position:sticky;top:calc(var(--cbar-h) + env(safe-area-inset-top,0px));z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.rail .wrap{display:flex;align-items:center;gap:16px;min-height:54px}
+.rail-now{flex:none;min-width:0;color:var(--ink-2);white-space:nowrap}
+.rail-now b{color:var(--ink);font-weight:600}
+.rail ol{list-style:none;margin:0;padding:0;display:flex;flex:1;position:relative;align-items:center;justify-content:space-between}
+.rail ol::before,.rail .fill{content:"";position:absolute;left:8px;right:8px;top:50%;height:2px;background:var(--line-2);transform:translateY(-50%)}
+.rail .fill{right:auto;width:0;background:var(--accent);transition:width .5s ease}
+.rail li{position:relative;z-index:1}
+.rail a{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-2);font:500 .8125rem/1 var(--f-body);background:color-mix(in srgb,var(--bg) 92%,transparent);padding:4px 8px 4px 4px;border-radius:999px}
+.rail a i{width:14px;height:14px;border-radius:50%;border:2px solid var(--c);background:var(--bg);transition:background .3s,transform .3s;flex:none}
+.rail a.done i,.rail a.cur i{background:var(--c)}
+.rail a.cur{color:var(--ink)}
+.rail a.cur i{transform:scale(1.25)}
+
+/* Acts */
+.story{padding-top:24px}
+.act{position:relative;padding:72px 0 24px 64px}
+.act::before{content:"";position:absolute;left:19px;top:0;bottom:0;width:2px;background:repeating-linear-gradient(to bottom,var(--line-2) 0 6px,transparent 6px 12px)}
+.act-bead{position:absolute;left:8px;top:78px;width:24px;height:24px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--line)}
+.act-head{max-width:760px}
+.act-num{color:var(--ac-ink,var(--accent-ink));display:block;margin-bottom:10px}
+.act h2{font-size:var(--s3)}
+.lede{margin-top:14px;font-size:var(--s1);color:var(--ink-2);max-width:60ch}
+.tdp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:32px}
+.tdp>div{border-top:2px solid var(--ink);padding-top:14px;min-width:0}
+.tdp>div:nth-child(2){border-color:var(--ac)}
+.tdp h3{font:600 var(--s-1)/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;color:var(--ink-2)}
+.tdp p+p,.tdp ul{margin-top:8px}
+.tdp ul{padding-left:18px;margin-bottom:0}
+.tdp li+li{margin-top:4px}
+.panel{margin-top:32px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow);min-width:0}
+.panel-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 16px;margin-bottom:16px}
+.panel-head h3{font-size:var(--s2)}
+.ill{font:500 .68rem/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:5px 9px;max-width:100%}
+.bridge{margin:56px 0 0;padding:28px 0 0;font:600 var(--s2)/1.25 var(--f-display);letter-spacing:-.015em;max-width:30ch;position:relative}
+.bridge::before{content:"Next";display:block;font:500 var(--s-1)/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:12px}
+.bridge::after{content:"";position:absolute;left:-52px;top:32px;width:16px;height:16px;border-radius:50%;border:2px solid var(--line-2);background:var(--bg)}
+.quote{font:600 var(--s2)/1.25 var(--f-display);letter-spacing:-.015em}
+.sub{margin-top:40px}
+.sub-h{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.sub-h .mono{color:var(--ac-ink,var(--accent-ink))}
+.sub-h h3{font-size:var(--s2)}
+.sub>p.muted{max-width:62ch}
+
+/* Act 1 scene */
+.scene-wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:center}
+.scene{width:100%;height:auto;background:var(--canvas);border-radius:16px;border:1px solid var(--line);touch-action:manipulation}
+.scene .bead{transition:transform .9s cubic-bezier(.6,.05,.25,1)}
+.scene .bead circle{stroke:var(--surface);stroke-width:3}
+.scene .bead.live{cursor:pointer}
+.scene .bead.live:hover circle,.scene .bead.live:focus-visible circle{stroke:var(--ink)}
+.scene .bead:focus{outline:none}
+.scene .layer{transition:opacity .6s}
+.scene .layer:not(.on){opacity:0;pointer-events:none}
+.scene text{fill:var(--ink);font-family:var(--f-body)}
+.scene .t-muted{fill:var(--ink-2)}
+.stroke{fill:none;stroke-linecap:round;opacity:.6;transition:stroke-dashoffset 1s ease-out}
+.steps-ui{display:grid;gap:16px;min-width:0}
+.step-dots{display:flex;gap:6px;flex-wrap:wrap}
+.step-dots button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:600 .8125rem/1 var(--f-mono);cursor:pointer}
+.step-dots button[aria-current="step"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.step-cap{min-height:9.5em}
+.step-cap h4{font-size:var(--s2);margin:4px 0 8px}
+.step-nav{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Act 2 posters */
+.posters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;padding:8px 4px}
+.poster{position:relative;aspect-ratio:3/4;background:var(--canvas);border:1px solid var(--line-2);border-radius:var(--rad);transform:rotate(var(--rot));overflow:hidden;transition:transform .8s cubic-bezier(.6,.05,.25,1),border-radius .8s,background .8s}
+.poster>*{position:absolute;transition:all .8s cubic-bezier(.6,.05,.25,1)}
+.p-band{left:var(--bl);top:var(--bt);width:var(--bw);height:var(--bh);background:var(--bbg);border-radius:var(--brad)}
+.p-word{left:8%;right:8%;top:var(--wt);font:var(--wf);text-align:var(--wa);color:var(--ink);font-size:clamp(.5rem,1.1vw,.72rem);line-height:1.1}
+.p-word .n{position:absolute;inset:0;opacity:0;font:700 clamp(.5rem,1.1vw,.72rem)/1.1 var(--f-display);text-align:left;color:#fff}
+.p-word .o{transition:opacity .4s}
+.p-l1,.p-l2{left:var(--ll);height:5%;border-radius:3px;background:var(--line-2)}
+.p-l1{top:68%;width:var(--lw1)}
+.p-l2{top:77%;width:var(--lw2)}
+.p-cta{right:var(--cr);bottom:6%;width:34%;height:8%;border-radius:var(--crad);background:var(--cbg)}
+.p-dot{left:10%;top:9%;width:14%;aspect-ratio:1;border-radius:50%;background:#fff;opacity:0}
+.evp-on .poster{transform:none;border-radius:10px;background:var(--surface)}
+.evp-on .p-band{left:0;top:0;width:100%;height:46%;background:var(--vc);border-radius:0}
+.evp-on .p-word{top:26%;color:#fff}
+.evp-on .p-word .o{opacity:0}
+.evp-on .p-word .n{opacity:1}
+.evp-on .p-l1,.evp-on .p-l2{left:10%}
+.evp-on .p-l1{width:70%}
+.evp-on .p-l2{width:50%}
+.evp-on .p-cta{right:10%;border-radius:999px;background:var(--vc)}
+.evp-on .p-dot{opacity:.95}
+.poster-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-top:18px}
+.poster-note{color:var(--ink-2);font-size:.9375rem;max-width:60ch}
+
+/* Act 2: the EVP deck's own visual language. Graphite chapter cards with a thin rounded frame,
+   a yellow highlighter, line icons inside a tile whose bottom-right corner is a quarter circle. */
+.act-evp{--deck:#6B6D73;--deck-2:#86888E;--on-deck:#FFFFFF;--hl:#F5DC45;--hl-ink:#1C1B24;--leaf:0 0 46px 0}
+.chapter{position:relative;margin-top:44px;padding:30px 28px 30px 44px;border-radius:20px;background:radial-gradient(120% 140% at 0% 0%,var(--deck-2),var(--deck) 55%);color:var(--on-deck);overflow:hidden}
+.chapter::before{content:"";position:absolute;left:18px;top:16px;right:-2px;bottom:16px;border:1.5px solid rgba(255,255,255,.55);border-right:0;border-top-width:0;border-radius:0 0 0 22px;pointer-events:none}
+.chapter::after{content:"";position:absolute;left:18px;top:16px;width:40px;height:40px;border-top:1.5px solid rgba(255,255,255,.55);border-left:1.5px solid rgba(255,255,255,.55);border-radius:22px 0 0 0}
+.chapter .mono{color:rgba(255,255,255,.75)}
+.chapter h3{font:800 clamp(1.5rem,3vw,2.1rem)/1.05 var(--f-display);letter-spacing:-.02em;margin-top:6px}
+.chapter h3 span{font-weight:300;opacity:.92}
+.chapter p{margin-top:8px;max-width:62ch;color:rgba(255,255,255,.88)}
+.deck-src{display:inline-flex;align-items:center;gap:8px;font:500 .72rem/1.2 var(--f-mono);letter-spacing:.04em;color:var(--ink-2)}
+.deck-src::before{content:"";width:3px;height:14px;background:var(--hl);border-radius:2px}
+.sq{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.sq li{display:flex;gap:10px;align-items:baseline}
+.sq li::before{content:"";flex:none;width:8px;height:8px;background:var(--hl);transform:translateY(-1px)}
+.leafcard{border:1.5px solid var(--ink);border-radius:var(--leaf);background:var(--surface)}
+.epigraph{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:center;margin-top:28px}
+.epigraph blockquote{margin:0;font:500 var(--s1)/1.55 var(--f-body);color:var(--ink);max-width:46ch}
+.epigraph blockquote strong{font-weight:650}
+.swatches{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;padding:22px;border:1.5px solid var(--ink);border-radius:6px 6px 64px 6px;background:var(--surface)}
+.swatches i{aspect-ratio:1;border-radius:50%;background:var(--vc);display:block;transition:transform .5s cubic-bezier(.6,.05,.25,1)}
+.swatches i:nth-child(odd){transform:translateY(6px)}
+.swatches:hover i{transform:none}
+.swatches figcaption{grid-column:1/-1;font:700 clamp(1.1rem,2.4vw,1.4rem)/1.2 var(--f-display);margin-top:6px}
+.swatches figcaption b{font-weight:800}
+.ev-grid{margin-top:22px}
+/* Gartner categories */
+.cats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}
+.cat{min-width:0;display:flex;flex-direction:column}
+.cat h4{font:700 1rem/1 var(--f-display);text-align:center;padding:12px 8px;border-radius:8px;background:var(--canvas);border:1px solid var(--line);margin-bottom:8px}
+.cat ul{list-style:none;margin:0;padding:14px 14px 34px;font-size:.84rem;line-height:1.35;display:grid;gap:5px;align-content:start;flex:1}
+.cat li::before{content:"· ";color:var(--ink-2)}
+.cat li.hit{font-weight:650}
+.cat li.hit span{background:var(--hl);color:var(--hl-ink);padding:1px 5px;border-radius:3px}
+/* Venn */
+.vennx{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:center;margin-top:16px}
+.vsvg{width:100%;height:auto;display:block}
+.vsvg .c circle{fill:var(--surface);fill-opacity:0;stroke:var(--ink);stroke-width:1.5;transition:fill-opacity .3s}
+.vsvg .c{cursor:pointer}
+.vsvg .c:focus{outline:none}
+.vsvg .c.sel circle{fill:var(--ink);fill-opacity:.06;stroke-width:2.5}
+.vsvg .c:hover circle{fill:var(--ink);fill-opacity:.04}
+.vsvg .c:focus-visible circle{stroke:var(--accent);stroke-width:3}
+.vsvg text{fill:var(--ink);font-family:var(--f-body);pointer-events:none}
+.vsvg .lens{fill:var(--hl)}
+.vsvg .lens-t{fill:var(--hl-ink);font-family:var(--f-display);font-weight:800}
+.vsvg .q{font-weight:700;font-size:15px}
+.vpanel{display:grid;gap:10px}
+.vpanel .big{font:800 clamp(2.6rem,6vw,3.6rem)/1 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:500 .8125rem/1 var(--f-body);padding:9px 12px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* Word cloud, sized as in the deck */
+.wcloud{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px 16px;padding:22px 12px;margin-top:14px;border-radius:16px;background:var(--canvas);border:1px solid var(--line);font-family:var(--f-body);line-height:1.15}
+.wcloud span{color:var(--ink-2);white-space:nowrap}
+.wcloud .t1{font:600 clamp(1.6rem,5vw,3.3rem)/1 var(--f-display);color:var(--ink);letter-spacing:-.02em}
+.wcloud .t2{font:600 clamp(1.4rem,3.4vw,2.3rem)/1 var(--f-display);color:var(--ink);letter-spacing:-.015em}
+.wcloud .t3{font-size:clamp(1rem,2vw,1.35rem);color:var(--ink)}
+.wcloud .t4{font-size:.8rem}
+.wcloud .t5{font-size:.76rem;color:color-mix(in srgb,var(--hl) 55%,var(--ink-2))}
+.wcloud .t1,.wcloud .t2{text-decoration:underline;text-decoration-color:var(--hl);text-decoration-thickness:.16em;text-underline-offset:.1em;white-space:normal;text-align:center}
+/* Journey timeline (above / below the line, as in the deck) */
+.jt{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:auto auto auto;column-gap:12px;margin-top:22px}
+.jt .stage{grid-row:2;position:relative;display:flex;align-items:center;padding-block:14px}
+.jt .stage::before{content:"";position:absolute;left:-12px;right:0;top:50%;height:2px;background:var(--line-2)}
+
+.jt .stage b{position:relative;display:inline-block;background:var(--deck);color:var(--on-deck);font:600 .9rem/1.2 var(--f-body);padding:8px 12px;border-radius:6px}
+.jt .items{display:grid;gap:6px;align-content:end}
+.jt .items.up{grid-row:1;padding-bottom:4px}
+.jt .items.down{grid-row:3;align-content:start;padding-top:4px}
+.jt .items span{font-size:.8rem;line-height:1.3;padding:6px 9px;border:1px solid var(--ink);border-radius:5px;background:var(--surface)}
+/* Pillars */
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.ptile{display:grid;justify-items:center;gap:10px;padding:18px 10px 16px;border:1.5px solid var(--line-2);border-radius:18px;background:var(--surface);color:var(--ink);cursor:pointer;font:700 .95rem/1.15 var(--f-display);text-align:center;transition:border-color .2s,transform .2s,box-shadow .2s}
+.ptile svg{width:64px;height:64px}
+.ptile:hover{transform:translateY(-2px);border-color:var(--ink)}
+.ptile[aria-selected="true"]{border-color:var(--ink);box-shadow:inset 0 -4px 0 var(--hl)}
+.pdetail{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);margin-top:14px;border:1.5px solid var(--ink);border-radius:8px 46px 8px 46px;background:var(--surface);overflow:hidden}
+.pd-left{padding:26px;display:grid;gap:12px;align-content:start;border-right:1.5px solid var(--ink);border-radius:0 0 46px 0}
+.pd-left svg{width:92px;height:92px}
+.pd-left h4{font:800 1.6rem/1.05 var(--f-display);letter-spacing:-.015em}
+.pd-right{padding:26px;display:grid;gap:18px;align-content:start}
+.pd-right h5{margin:0 0 6px;font:700 1rem/1.2 var(--f-body);display:flex;align-items:center;gap:8px}
+.pd-right h5::before{content:"";width:0;height:0;border-left:9px solid var(--hl);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.pd-right p{color:var(--ink-2);font-size:.95rem;line-height:1.65}
+.pd-right blockquote{margin:0;font-style:italic}
+.lang{display:inline-flex;border:1px solid var(--line-2);border-radius:999px;padding:3px;gap:2px;justify-self:start}
+.lang button{font:600 .75rem/1 var(--f-mono);padding:6px 10px;border-radius:999px;border:0;background:transparent;color:var(--ink-2);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.fa{font-family:"Vazirmatn",Tahoma,"Segoe UI",sans-serif;direction:rtl;text-align:right}
+.paint{width:100%;height:auto;display:block;border-radius:10px;background:var(--canvas);border:1px solid var(--line)}
+.paint g{transition:opacity .7s}
+.paint g.off{opacity:0}
+.paint-cap{font:500 .72rem/1.3 var(--f-mono);color:var(--ink-2);letter-spacing:.04em}
+.pp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
+.pp>div{padding:22px;border:1.5px solid var(--ink);border-radius:8px 8px 40px 8px;background:var(--surface)}
+.pp h4{font:700 1.05rem/1.2 var(--f-body);display:flex;gap:10px;align-items:center;margin-bottom:6px}
+.pp h4::before{content:"";width:9px;height:9px;background:var(--hl)}
+.bigline{margin-top:22px;padding:34px 28px;border-radius:20px;background:radial-gradient(120% 140% at 0% 0%,var(--deck-2),var(--deck) 60%);color:#fff;text-align:center;font:300 clamp(1.6rem,4vw,2.6rem)/1.15 var(--f-display);letter-spacing:-.01em}
+.bigline b{font-weight:800}
+/* Rollout tree */
+.tree{display:flex;align-items:center;gap:18px;margin-top:18px;overflow-x:auto;padding-bottom:4px}
+.t-root{flex:none;background:var(--deck);color:#fff;font:600 1.05rem/1 var(--f-body);padding:14px 16px;border-radius:8px}
+.t-br{display:grid;gap:14px;border-left:1.5px solid var(--ink);border-radius:14px 0 0 14px;padding:6px 0 6px 16px}
+.t-row{display:flex;align-items:center;gap:16px}
+.t-node{flex:none;font:600 .95rem/1.2 var(--f-body);padding-bottom:4px;border-bottom:3px solid var(--hl);min-width:9.5em}
+.t-node.sm{font-weight:500;border:1px solid var(--ink);border-radius:6px;padding:6px 10px;min-width:5.6em;text-align:center}
+.t-leaves{list-style:none;margin:0;padding:4px 0 4px 14px;display:grid;gap:5px;border-left:1.5px solid var(--ink);border-radius:12px 0 0 12px}
+.t-leaves li{font-size:.84rem;padding:6px 10px;border:1px solid var(--ink);border-radius:5px;background:var(--surface);white-space:nowrap}
+.film{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:16px;list-style:none;padding:0}
+.film li{position:relative;padding:12px;border-radius:10px;background:var(--canvas);border:1px solid var(--line);font-size:.8125rem;line-height:1.35;color:var(--ink-2)}
+.film li b{display:block;color:var(--ink);font:650 .95rem/1.2 var(--f-body);margin-bottom:4px}
+.film li:first-child{background:var(--deck);border-color:var(--deck);color:rgba(255,255,255,.85)}
+.film li:first-child b{color:#fff}
+.impact{width:100%;border-collapse:separate;border-spacing:0 6px;font-size:.9rem}
+.impact th{background:var(--deck);color:#fff;text-align:left;font:600 .9rem/1.2 var(--f-body);padding:10px 14px}
+.impact th:first-child{border-radius:6px 0 0 6px}.impact th:last-child{border-radius:0 6px 6px 0}
+.impact td{padding:9px 14px;border-block:1px solid var(--line-2);background:var(--surface)}
+.impact td:first-child{border-left:1px solid var(--line-2);border-radius:6px 0 0 6px;font-weight:600;width:38%}
+.impact td:last-child{border-right:1px solid var(--line-2);border-radius:0 6px 6px 0}
+.cols2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:18px}
+.cols2>div{min-width:0}
+.cols2 h4{font:700 1.1rem/1.2 var(--f-display);margin-bottom:10px}
+.planned{display:inline-block;font:600 .68rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border-radius:4px;background:var(--hl);color:var(--hl-ink);vertical-align:middle;margin-left:6px}
+@media (max-width:900px){
+  .epigraph,.vennx,.pdetail,.cols2{grid-template-columns:minmax(0,1fr)}
+  .pd-left{border-right:0;border-bottom:1.5px solid var(--ink)}
+  .cats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .film{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jt{grid-template-columns:minmax(0,1fr);grid-template-rows:none;row-gap:0}
+  .jt .stage,.jt .items.up,.jt .items.down{grid-row:auto}
+  .jt .stage{padding-block:12px 8px}
+  .jt .stage::before{left:14px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .jt .items{padding:0 0 10px 28px!important;border-left:2px solid var(--line-2);margin-left:14px}
+}
+@media (max-width:640px){
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pp{grid-template-columns:minmax(0,1fr)}
+  .chapter{padding:24px 18px 24px 34px}
+  .chapter::before,.chapter::after{left:12px}
+  .film{grid-template-columns:minmax(0,1fr)}
+  .t-leaves li{white-space:normal}
+  .tree,.t-row{flex-direction:column;align-items:stretch;gap:10px}
+  .t-root{align-self:flex-start}
+  .t-node{min-width:0;align-self:flex-start}
+}
+.jt>*{grid-column:var(--c)}
+.jt .stage.first::before{left:0}
+@media (max-width:900px){.jt>*{grid-column:auto}}
+
+/* Act 3 browser */
+.site-wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px;align-items:start}
+.browser{border:1px solid var(--line-2);border-radius:14px;overflow:hidden;background:var(--canvas)}
+.b-bar{display:flex;align-items:center;gap:6px;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--surface)}
+.b-bar i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
+.b-url{margin-left:8px;flex:1;min-width:0;font:500 .72rem/1 var(--f-mono);color:var(--ink-2);background:var(--bg);border-radius:6px;padding:6px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.b-body{padding:18px;display:grid;gap:16px}
+.b-hero{border-radius:10px;padding:18px;background:var(--navy);color:var(--bg);display:grid;gap:10px}
+.b-logo{width:14px;height:29px;color:var(--bg)}
+.b-hero b{font:700 1.125rem/1.1 var(--f-display)}
+.b-dots{display:flex;gap:5px}
+.b-dots i{width:8px;height:8px;border-radius:50%}
+.b-search{height:28px;border-radius:7px;background:color-mix(in srgb,var(--bg) 85%,transparent);opacity:.35}
+.b-sec{font:600 .7rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.b-pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.b-pillars div{border:1px solid var(--line);border-radius:8px;padding:8px;font-size:.7rem;line-height:1.2;background:var(--surface)}
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.tile{aspect-ratio:1;border-radius:9px;border:2px solid transparent;background:#fff;padding:0;overflow:hidden;cursor:pointer;display:block;transition:transform .2s,box-shadow .2s}
+.tile img{display:block;width:100%;height:100%}
+.tile:hover{transform:translateY(-2px)}
+.tile[aria-pressed="true"]{border-color:var(--vc);box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--vc)}
+.v-detail{border-radius:16px;border:1px solid var(--line);padding:20px;background:var(--surface);display:grid;gap:12px;position:relative;overflow:hidden}
+.v-detail::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--vc)}
+.v-detail h4{font-size:var(--s2)}
+.v-detail ul{margin:0;padding-left:18px}
+.v-detail li+li{margin-top:6px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.fact{display:inline-flex;align-items:baseline;gap:8px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.9375rem}
+.fact b{font:700 1.25rem/1 var(--f-display)}
+
+/* Act 4 loop */
+.loop{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;counter-reset:l;position:relative}
+.loop li{position:relative;padding:18px;border-radius:16px;background:var(--canvas);border:1px solid var(--line);counter-increment:l;min-width:0}
+.loop li::before{content:counter(l);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--ac);color:#fff;font:600 .8125rem/1 var(--f-mono);margin-bottom:10px}
+.loop li:not(:last-child)::after{content:"";position:absolute;right:-12px;top:30px;width:12px;height:2px;background:var(--line-2)}
+.loop h4{font-size:1.0625rem;margin-bottom:6px}
+.loop p{font-size:.9rem;color:var(--ink-2)}
+.loop .chips{margin-top:8px}
+.loop-back{margin-top:12px;display:flex;align-items:center;gap:10px;color:var(--ink-2);font-size:.875rem}
+.loop-back::before{content:"";flex:1;height:2px;background:repeating-linear-gradient(to right,var(--line-2) 0 6px,transparent 6px 12px)}
+.loop-back::after{content:"";flex:1;height:2px;background:repeating-linear-gradient(to right,var(--line-2) 0 6px,transparent 6px 12px)}
+
+/* Act 5 chart */
+.chart-wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:center}
+.rank{width:100%;height:auto;display:block}
+.rank text{font-family:var(--f-body);fill:var(--ink)}
+.rank .axis{fill:var(--ink-2);font-size:12px;font-family:var(--f-mono)}
+.rank .grid{stroke:var(--line);stroke-width:1}
+.rank .line{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:400;stroke-dashoffset:0}
+.play .rank .line{animation:draw 1.4s ease-out}
+@keyframes draw{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+.rank .pt{fill:var(--surface);stroke:var(--accent);stroke-width:3}
+.rank .pt.last{fill:var(--accent)}
+.rank .shade{fill:var(--shade)}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.kpi{padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--canvas);display:grid;gap:6px;min-width:0}
+.kpi b{font:750 clamp(1.6rem,3.4vw,2.2rem)/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpi span{font-size:.875rem;color:var(--ink-2);line-height:1.4}
+.caution{margin-top:16px;font-size:.9375rem;color:var(--ink-2);padding:12px 14px;border-left:3px solid var(--taupe);background:var(--canvas);border-radius:0 10px 10px 0}
+.photos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-top:24px;align-items:start}
+.photos figure,.tab-photo{margin:0;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.photos img,.tab-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.photos figcaption,.tab-photo figcaption{padding:10px 14px;font-size:.8125rem;color:var(--ink-2)}
+
+/* Act 6 tabs */
+.tablist{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:22px}
+.tablist button{font:600 .9375rem/1 var(--f-body);padding:12px 16px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer}
+.tablist button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabpanel{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start}
+.tabpanel h4{font-size:var(--s2);margin-bottom:8px}
+.tabpanel .meta{color:var(--ink-2);margin-bottom:16px}
+.funnel{display:grid;gap:10px;margin:8px 0 6px}
+.f-row{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:12px;align-items:center}
+.f-row span{font-size:.875rem;color:var(--ink-2);line-height:1.25}
+.f-track{display:flex;align-items:center;gap:8px;min-width:0}
+.f-bar{height:26px;border-radius:6px;background:var(--fc,var(--ink));min-width:4px;transform-origin:left}
+.play .f-bar{animation:grow 1s cubic-bezier(.6,.05,.25,1) both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.f-track b{font:700 1rem/1 var(--f-display);font-variant-numeric:tabular-nums;white-space:nowrap}
+.did{margin:16px 0 0;padding-left:18px}
+.did li+li{margin-top:4px}
+.budget{display:grid;gap:8px;margin-top:6px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;padding-bottom:16px;position:relative}
+.steps li::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--ac);margin:4px 0 0 7px;box-shadow:0 0 0 4px var(--surface)}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:13px;top:20px;bottom:0;width:2px;background:var(--line-2)}
+.steps b{font-weight:600}
+.kept{margin-top:40px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;padding:32px;border-radius:24px;background:var(--ink);color:var(--bg)}
+.kept .n{font:800 clamp(4rem,12vw,7rem)/.85 var(--f-display);color:var(--accent);letter-spacing:-.05em}
+.kept p{font:600 clamp(1.25rem,2.6vw,1.7rem)/1.3 var(--f-display);letter-spacing:-.01em;max-width:34ch}
+.kept small{display:block;margin-top:10px;font:400 .9375rem/1.5 var(--f-body);opacity:.75}
+
+/* Fit, plan, contact */
+.block{padding-block:80px 0}
+.block>h2{font-size:var(--s3);max-width:24ch}
+.block>.lede{margin-bottom:28px}
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.fit{width:100%;border-collapse:collapse;font-size:.9375rem}
+.fit th,.fit td{text-align:left;padding:16px 18px;vertical-align:top;border-bottom:1px solid var(--line)}
+.fit tr:last-child td{border-bottom:0}
+.fit thead th{font:600 var(--s-1)/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);background:var(--canvas)}
+.fit td:first-child{font-weight:600;width:24%}
+.fit td:last-child{width:14%;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 .75rem/1 var(--f-mono);letter-spacing:.04em;padding:6px 10px;border-radius:999px;border:1px solid}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.pill.strong{color:var(--v10);border-color:color-mix(in srgb,var(--v10) 40%,transparent)}
+.pill.partial{color:var(--taupe);border-color:color-mix(in srgb,var(--taupe) 45%,transparent)}
+.pill.building{color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.fit a{white-space:nowrap}
+.plan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.phase{padding:22px;border-radius:18px;border:1px solid var(--line);background:var(--surface);min-width:0}
+.phase .mono{color:var(--accent-ink)}
+.phase h3{font-size:1.375rem;margin:8px 0 12px}
+.phase ul{margin:0;padding-left:18px}
+.phase li+li{margin-top:6px}
+.contact{margin-top:80px;padding:40px 32px;border-radius:28px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.contact h2{font-size:var(--s3)}
+.contact .lede{font-size:1.0625rem}
+.c-list{display:grid;gap:10px}
+.c-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;flex-wrap:wrap}
+.c-row div{min-width:0;display:grid;gap:2px}
+.c-row .mono{font-size:.7rem;color:var(--ink-2)}
+.c-row .val{font-weight:600;user-select:all;overflow-wrap:anywhere}
+footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid;gap:8px}
+
+@media (max-width:900px){
+  .hero,.short,.scene-wrap,.two,.site-wrap,.chart-wrap,.tabpanel,.tagline,.contact{grid-template-columns:minmax(0,1fr)}
+  .hero-art{max-width:440px;aspect-ratio:4/3}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .posters{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .journey{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .loop{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .loop li::after{display:none}
+  .plan{grid-template-columns:minmax(0,1fr)}
+  .rail-now .lbl-long{display:none}
+  .cbar a span{display:none}
+  .cbar a{padding:7px}
+  .rail a span{display:none}
+  .rail a{padding:6px}
+}
+@media (max-width:640px){
+  .act{padding-left:34px;padding-top:56px}
+  .act::before{left:9px}
+  .act-bead{left:0;top:60px;width:20px;height:20px}
+  .bridge::after{left:-31px;width:12px;height:12px}
+  .tdp,.pillars,.roll{grid-template-columns:minmax(0,1fr)}
+  .tdp{gap:20px}
+  .posters{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .b-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .photos{grid-template-columns:minmax(0,1fr)}
+  .kpis{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .short{padding:22px}
+  .panel{padding:16px}
+  .kept{grid-template-columns:minmax(0,1fr);padding:24px}
+  .contact{padding:24px 18px}
+  .f-row{grid-template-columns:minmax(0,1fr)}
+  .f-row span{font-size:.8125rem}
+  .fit thead{display:none}
+  .fit,.fit tbody,.fit tr,.fit td{display:block;width:100%!important}
+  .fit tr{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .fit tr:last-child{border-bottom:0}
+  .fit td{padding:4px 0;border:0}
+  .tools .btn-text{display:none}
+  .journey{grid-template-columns:minmax(0,1fr)}
+  .loop{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="sgWordmark" viewBox="51 93 200 117"><path d="M74.3572 179.791H83.6228C83.1607 184.818 79.3958 187.36 74.4812 187.36C67.0191 187.36 62.9611 180.488 62.9611 173.729C62.9611 166.97 66.8387 159.986 74.3008 159.986C78.8773 159.986 82.1687 162.764 83.7355 166.914L94.5003 162.415C90.7355 154.272 83.7919 150.235 74.8193 150.235C60.7293 150.235 51.1142 159.558 51.148 173.74C51.1819 186.719 62.251 197.01 75.259 196.639C82.2025 196.448 88.3007 193.827 92.415 188.102C96.2926 182.67 96.7548 177.249 96.8675 170.895H74.3572V179.791Z"/><path d="M112.501 170.445H112.388V165.598H101.849V195.222H112.388V183.267C112.388 178.183 113.831 174.314 119.682 174.314C121.305 174.314 122.691 174.483 124.134 175.293V165.182H122.105C118.002 165.182 114.519 166.801 112.501 170.434"/><path d="M78.743 134.805C82.2148 131.858 83.2631 127.404 83.2631 123.063C83.2631 116.011 78.5739 112.941 72.487 111.153L69.5901 110.287C67.6174 109.646 64.5514 108.667 64.5514 106.125C64.5514 103.584 67.3356 102.482 69.421 102.482C70.4467 102.482 71.4612 102.639 72.4419 102.931C75.3501 103.786 78.4499 102.482 79.8363 99.7935L81.4483 96.6557C81.4483 96.6557 81.4483 96.577 81.4144 96.5545C77.5256 94.3726 72.1714 93.0005 67.7865 93.0005C59.0394 93.0005 52.7158 98.7813 52.7158 107.633C52.7158 116.484 57.4162 117.923 64.5402 119.948C66.9749 120.645 71.4387 121.736 71.4387 124.919C71.4387 128.102 68.5981 129.316 65.9266 129.316C62.0491 129.316 58.6787 127.292 55.8382 124.806L51.0024 133.882C51.0024 133.882 51.0024 133.961 51.025 133.984C55.4774 137.088 60.8429 138.921 66.3324 138.921C70.7398 138.921 75.3163 137.706 78.7317 134.816"/><path d="M106.099 123.298V137.683C106.099 137.683 106.133 137.762 106.178 137.762H110.371C113.843 137.762 116.65 134.961 116.65 131.497V119.429C116.65 112.142 113.46 107.114 105.468 107.114C101.365 107.114 98.4117 108.318 95.9882 111.883C95.9769 111.905 95.9544 111.917 95.9206 111.917C95.9206 111.917 95.8417 111.883 95.8417 111.838V108.171C95.8417 108.171 95.8078 108.093 95.7628 108.093H85.3699C85.3699 108.093 85.291 108.126 85.291 108.171V137.683C85.291 137.683 85.3248 137.762 85.3699 137.762H89.5631C93.0349 137.762 95.8417 134.961 95.8417 131.497V122.387C95.8417 118.687 97.059 115.504 101.354 115.504C106.573 115.504 106.11 120.475 106.11 123.31"/><path d="M133.659 138.74C137.119 138.74 140.76 137.424 142.62 134.489C142.631 134.466 142.654 134.455 142.677 134.455C142.722 134.455 142.755 134.489 142.755 134.534V137.683C142.755 137.683 142.789 137.762 142.834 137.762H147.028C150.499 137.762 153.306 134.961 153.306 131.497V108.171C153.306 108.171 153.272 108.093 153.227 108.093H142.823C142.823 108.093 142.744 108.126 142.744 108.171V110.792C142.744 110.859 142.665 110.893 142.609 110.837C140.4 108.34 136.883 107.114 133.524 107.114C124.709 107.114 118.633 114.402 118.633 122.905C118.633 131.407 124.833 138.751 133.648 138.751M136.308 116.258C140.603 116.258 143.094 119.328 143.094 122.961C143.094 126.594 140.603 129.608 136.308 129.608C132.013 129.608 129.522 126.717 129.522 122.961C129.522 119.205 132.013 116.258 136.308 116.258Z"/><path d="M167.085 144.004V134.95C167.085 134.95 167.085 134.939 167.096 134.95C169.362 137.537 172.879 138.751 176.294 138.751C185.109 138.751 191.185 131.576 191.185 123.017C191.185 114.458 185.041 107.114 176.17 107.114C172.71 107.114 169.125 108.498 167.209 111.422C167.198 111.444 167.175 111.456 167.141 111.456C167.141 111.456 167.062 111.422 167.062 111.377V108.093H156.512V150.268H160.784C164.256 150.268 167.062 147.468 167.062 144.004M173.499 116.247C177.782 116.247 180.284 119.317 180.284 122.95C180.284 126.582 177.793 129.597 173.499 129.597C169.204 129.597 166.713 126.706 166.713 122.95C166.713 119.193 169.204 116.247 173.499 116.247Z"/><path d="M203.718 135.12C203.718 135.053 203.797 135.019 203.842 135.075C206.107 137.572 209.568 138.742 212.927 138.742C221.742 138.742 227.829 131.566 227.829 123.007C227.829 114.449 221.685 107.104 212.814 107.104C209.354 107.104 205.769 108.488 203.853 111.412C203.842 111.434 203.819 111.446 203.785 111.446C203.785 111.446 203.706 111.412 203.706 111.367V108.162C203.706 108.162 203.673 108.083 203.628 108.083H193.223C193.223 108.083 193.145 108.117 193.145 108.162V150.202C193.145 150.202 193.178 150.281 193.223 150.281H197.417C200.888 150.281 203.695 147.48 203.695 144.016V135.131L203.718 135.12ZM210.154 116.248C214.437 116.248 216.94 119.318 216.94 122.951C216.94 126.584 214.449 129.598 210.154 129.598C205.859 129.598 203.368 126.708 203.368 122.951C203.368 119.195 205.859 116.248 210.154 116.248Z"/><path d="M240.167 94.1602L233.02 121.557H238.96C241.835 121.557 244.348 119.612 245.07 116.834L250.999 94.1602H240.167Z"/><path d="M236.582 125.429C232.896 125.429 229.909 128.409 229.909 132.087C229.909 135.764 232.896 138.745 236.582 138.745C240.268 138.745 243.255 135.764 243.255 132.087C243.255 128.409 240.268 125.429 236.582 125.429Z"/><path d="M233.301 94.7112H233.324L234.147 97.0168H234.519L235.341 94.7112H235.364V97.0168H235.984V94.1602H234.981L234.327 95.8472L233.684 94.1602H232.681V97.0168H233.301V94.7112Z"/><path d="M230.777 97.0168H231.465V94.7112H232.333V94.1602H229.909V94.7112H230.777V97.0168Z"/><path d="M142.712 164.608C133.165 164.608 124.824 170.322 124.824 180.432C124.824 190.543 133.221 196.2 142.712 196.2C152.204 196.2 160.601 190.487 160.601 180.432C160.601 170.378 152.271 164.608 142.712 164.608ZM142.712 187.068C138.429 187.068 135.938 184.178 135.938 180.432C135.938 176.687 138.429 173.729 142.712 173.729C146.996 173.729 149.487 176.788 149.487 180.432C149.487 184.076 146.996 187.068 142.712 187.068Z"/><path d="M186.246 181.413C186.246 185.169 185.321 187.823 180.982 187.823C176.642 187.823 175.718 185.169 175.718 181.413V165.589H165.178V183.437C165.178 193.199 172.065 196.202 180.982 196.202C189.898 196.202 196.785 193.199 196.785 183.437V165.589H186.257V181.413H186.246Z"/><path d="M222.767 164.608C219.295 164.608 215.699 165.992 213.794 168.938H213.681V165.587H203.142V210H213.681V192.388C215.936 194.986 219.475 196.2 222.891 196.2C231.683 196.2 237.759 189.036 237.759 180.489C237.759 171.941 231.627 164.608 222.767 164.608ZM220.107 187.068C215.823 187.068 213.332 184.178 213.332 180.432C213.332 176.687 215.823 173.729 220.107 173.729C224.39 173.729 226.881 176.788 226.881 180.432C226.881 184.076 224.39 187.068 220.107 187.068Z"/></symbol></svg>
+<a class="skip" href="#story">Skip to the story</a>
+
+<aside class="cbar" aria-label="Contact">
+  <div class="wrap">
+    <p class="cbar-lbl mono"><i aria-hidden="true"></i>Based in Romania · open to talk</p>
+    <ul>
+      <li><a href="mailto:reyhanehgolestani75@gmail.com" aria-label="Email reyhanehgolestani75@gmail.com">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="2"/><path d="m2 4 6 5 6-5"/></svg><span>reyhanehgolestani75@gmail.com</span></a></li>
+      <li><a href="tel:5346191692" aria-label="Phone 534 619 1692">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3.5 1.5h2.5l1.2 3.2-1.6 1.1a8 8 0 0 0 4.6 4.6l1.1-1.6 3.2 1.2v2.5a1.5 1.5 0 0 1-1.6 1.5A12.5 12.5 0 0 1 2 3.1a1.5 1.5 0 0 1 1.5-1.6z"/></svg><span>534 619 1692</span></a></li>
+      <li><a href="https://www.linkedin.com/in/reyhanegolestani" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2 5.5h2.6V14H2zM3.3 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM6.3 5.5h2.5v1.2c.4-.7 1.3-1.4 2.6-1.4 2.7 0 3.1 1.8 3.1 4V14h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V14H6.3z"/></svg><span>LinkedIn</span></a></li>
+    </ul>
+  </div>
+</aside>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top" aria-label="Reyhaneh Golestani, back to top"><i aria-hidden="true"></i>Reyhaneh Golestani</a>
+    <div class="tools">
+      <button class="btn small" id="mkToggle" type="button" aria-pressed="false" title="Show or hide the dashed ADD / CONFIRM notes">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="2" stroke-dasharray="2.5 2"/></svg>
+        <span class="btn-text" id="mkLabel">Hide notes</span>
+      </button>
+      <a class="btn small" href="assets/Reyhaneh_Golestani_CV.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 1.5h5.5L12.5 4.5V14.5H4z"/><path d="M9.5 1.5v3h3"/></svg>
+        <span class="btn-text">PDF résumé</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="h1">
+      <div>
+        <div class="eyebrow mono"><span>Application</span><span>Employer Branding Senior Specialist</span><span>Deloitte Central Europe · Bucharest</span></div>
+        <h1 id="h1">Build the promise. <em>Then build the places people meet it.</em></h1>
+        <p class="who"><strong>Reyhaneh Golestani</strong>, Employer Branding &amp; Talent Experience Senior Specialist at Snapp Group, who leads this function. Six acts, one story, from Sep 2022 to today.</p>
+        <a class="employer" href="https://careers.snappgroup.net/en" target="_blank" rel="noopener" aria-label="Snapp Group careers site"><span class="mono">Works at</span><svg role="img" aria-label="Snapp Group"><use href="#sgWordmark"/></svg></a>
+        <div class="cta">
+          <a class="btn primary" href="#act-1">Read the story
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 2v12M3 9l5 5 5-5"/></svg></a>
+          <a class="btn" href="#short">30-second version</a>
+          <a class="btn" href="#fit">Fit with the role</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" id="heroSvg"></svg>
+        <span class="cap mono">Illustration · twelve colors, one thread</span>
+      </div>
+    </section>
+
+    <div class="stats" role="list">
+      <div class="stat" role="listitem"><b>12</b><span>ventures under one name, one employer brand</span></div>
+      <div class="stat" role="listitem"><b>#5 → #2</b><span>job-fair employer rank among 50 companies</span></div>
+      <div class="stat" role="listitem"><b>21 of 33</b><span>bootcamp attendees asked to join the group</span></div>
+      <div class="stat" role="listitem"><b>4</b><span>bootcamp hires, all since promoted</span></div>
+    </div>
+
+    <section class="short" id="short" aria-labelledby="short-h">
+      <div>
+        <p class="lbl mono">The 30-second version</p>
+        <h2 id="short-h">If you only read one thing</h2>
+        <p class="spine">The whole page in about 150 words.</p>
+      </div>
+      <div>
+        <p class="body">Snapp Group is twelve businesses under one name. When I joined the central team, nobody could clearly say what that team was for. So before designing anything, I asked people what they believed Central was founded to do. Their answers became Color and Canvas: the group is the canvas, the ventures are the colors, and Central is the thread that connects them. Next I led an EVP built from three sources: leadership interviews, 124 people from across the ventures and 1,144 people who had touched Snapp Group. I gave that promise a home in one central career page for all twelve ventures, and a voice on LinkedIn. I took it to three job fairs, where our rank among 50 companies went from fifth to third to second. Then I ran a five-week product bootcamp. 21 of its 33 attendees asked to join us. We hired four, and all four have since been promoted.</p>
+        <p class="sig">Reyhaneh Golestani · based in Romania</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<nav class="rail" aria-label="Story progress">
+  <div class="wrap">
+    <p class="rail-now mono"><span class="lbl-long">Now reading · </span><b id="railNow">Act 1</b></p>
+    <ol>
+      <li><a href="#act-1" style="--c:var(--v1)" data-rail="1"><i></i><span>Identity</span></a></li>
+      <li><a href="#act-2" style="--c:var(--v3)" data-rail="2"><i></i><span>EVP</span></a></li>
+      <li><a href="#act-3" style="--c:var(--v9)" data-rail="3"><i></i><span>Career page</span></a></li>
+      <li><a href="#act-4" style="--c:var(--v7)" data-rail="4"><i></i><span>LinkedIn</span></a></li>
+      <li><a href="#act-5" style="--c:var(--v11)" data-rail="5"><i></i><span>Job fairs</span></a></li>
+      <li><a href="#act-6" style="--c:var(--v4)" data-rail="6"><i></i><span>Universities</span></a></li>
+      <span class="fill" id="railFill" aria-hidden="true"></span>
+    </ol>
+  </div>
+</nav>
+
+<div class="wrap story" id="story">
+
+  <!-- ACT 1 -->
+  <section class="act" id="act-1" data-act="1" data-name="Identity" style="--ac:var(--v1)" aria-labelledby="a1h">
+    <span class="act-bead" aria-hidden="true"></span>
+    <div class="act-head">
+      <span class="act-num mono">Act 1 of 6 · Identity</span>
+      <h2 id="a1h">Color and Canvas: finding out who we were</h2>
+      <p class="lede">Before any campaign, the group needed an answer to a simple question. What is the central team for?</p>
+    </div>
+    <div class="tdp">
+      <div><h3>Tension</h3><p>The central team's identity was unclear, and that hurt decisions, especially in branding. Was Central a supporter, the leader and decision-maker, or just another venture? Projects followed global best practice but did not fit the group's own identity.</p></div>
+      <div><h3>What I did</h3><p>My first move was to ask. I asked colleagues and stakeholders what they believed Central's mission was, and what intent it had been founded on.</p></div>
+      <div><h3>Result</h3><p>A concept the group could use: <strong>Color and Canvas</strong>. Snapp Group is the canvas. Ventures are the colors: brands, businesses, cultures. Central is the thread that supports and connects them.</p></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Watch the idea form</h3><span class="ill">Illustration · interactive</span></div>
+      <div class="scene-wrap">
+        <svg class="scene" id="scene" viewBox="0 0 640 400" role="img" aria-labelledby="sceneTitle">
+          <title id="sceneTitle">Twelve colored beads, one per venture, move from scattered to gathered around Central, then onto a thread across a canvas.</title>
+          <g class="layer" data-show="4-6">
+            <rect x="40" y="56" width="560" height="288" rx="14" fill="var(--surface)" stroke="var(--line-2)" stroke-width="1.5"/>
+            <text x="56" y="82" font-size="12" class="t-muted" font-family="var(--f-mono)">THE CANVAS · SNAPP GROUP</text>
+          </g>
+          <g id="strokes"></g>
+          <g class="layer" data-show="2-3">
+            <circle cx="320" cy="200" r="46" fill="var(--surface)" stroke="var(--ink)" stroke-width="2" stroke-dasharray="5 5"/>
+            <text x="320" y="205" text-anchor="middle" font-size="16" font-weight="700" id="centralLabel">Central?</text>
+          </g>
+          <g class="layer" data-show="2-2">
+            <text x="320" y="122" text-anchor="middle" font-size="14" class="t-muted">Supporter?</text>
+            <text x="200" y="290" text-anchor="middle" font-size="14" class="t-muted">Decision-maker?</text>
+            <text x="452" y="290" text-anchor="middle" font-size="14" class="t-muted">Another venture?</text>
+          </g>
+          <g class="layer" data-show="4-6">
+            <path id="thread" d="M40,214 C150,110 250,320 330,200 S500,108 600,196" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+            <text x="596" y="226" text-anchor="end" font-size="12" class="t-muted" font-family="var(--f-mono)">CENTRAL = THE THREAD</text>
+          </g>
+          <g id="beads"></g>
+          <g class="layer" data-show="5-5" id="youWrap">
+            <g id="you" style="transition:transform .9s cubic-bezier(.6,.05,.25,1)">
+              <circle r="15" fill="var(--surface)" stroke="var(--accent)" stroke-width="4"/>
+              <text y="-24" text-anchor="middle" font-size="13" font-weight="700" fill="var(--accent)">You</text>
+            </g>
+          </g>
+          <g class="layer" data-show="6-6">
+            <text x="320" y="318" text-anchor="middle" font-size="17" font-weight="700" font-family="var(--f-display)">“Bring your color to the canvas,</text>
+            <text x="320" y="338" text-anchor="middle" font-size="17" font-weight="700" font-family="var(--f-display)">together we will make a masterpiece.”</text>
+          </g>
+        </svg>
+        <div class="steps-ui">
+          <div class="step-dots" id="stepDots" aria-label="Scene steps"></div>
+          <div class="step-cap" aria-live="polite">
+            <span class="mono muted" id="stepNum">Step 1 of 6</span>
+            <h4 id="stepTitle"></h4>
+            <p id="stepText"></p>
+          </div>
+          <div class="step-nav">
+            <button class="btn small" id="stepPrev" type="button">Back</button>
+            <button class="btn small primary" id="stepNext" type="button">Next step</button>
+            <button class="btn small" id="clearPaint" type="button" hidden>Clear the canvas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="bridge">Once the group knew who it was, a harder question came up: what does it promise the people it hires?</p>
+  </section>
+
+  <!-- ACT 2 -->
+  <section class="act act-evp" id="act-2" data-act="2" data-name="EVP" style="--ac:var(--v3)" aria-labelledby="a2h">
+    <span class="act-bead" aria-hidden="true"></span>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="ic-lead" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"><path d="M20 90V30h11v9h13v-9h12v9h12v-9h12v32a28 28 0 0 1-28 28z"/><path d="M68 30V10h17v10H68"/><path d="M37 90V64a13 13 0 0 1 26 0v26"/><path d="M20 66h17M63 66h17M20 72h17M63 72h17"/></g></symbol>
+        <symbol id="ic-create" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"><path d="M50 8 80 42H20z"/><path d="M41 18h18"/><path d="M20 42v48h32a28 28 0 0 0 28-28V42"/><path d="M20 54a10 10 0 0 1 20 0v36M40 54a10 10 0 0 1 20 0v35M60 54a10 10 0 0 1 20 0"/></g></symbol>
+        <symbol id="ic-grow" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"><path d="M20 34v56h32a28 28 0 0 0 28-28V34"/><path d="M50 6c9 10 9 24 0 34-9-10-9-24 0-34z"/><path d="M50 40v50"/><path d="M50 62c-4-12-16-18-28-14 4 12 16 18 28 14zM50 62c4-12 16-18 28-14-4 12-16 18-28 14z"/><path d="M50 90c-2-14-14-24-30-24M50 90c2-14 14-24 30-24"/></g></symbol>
+        <symbol id="ic-harmony" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"><path d="M20 18v72h32a28 28 0 0 0 28-28V40"/><path d="M20 18h44"/><path d="M80 40a14 14 0 1 0-16-22a8 8 0 1 0 9 8"/><path d="M20 52c10-8 20 6 30-2s20-6 30 2M20 63c10-8 20 6 30-2s20-6 30 2M20 74c10-8 20 6 30-2s18-6 26 0M20 85c10-8 20 6 30-2"/></g></symbol>
+      </defs>
+    </svg>
+
+    <div class="act-head">
+      <span class="act-num mono">Act 2 of 6 · Employer value proposition</span>
+      <h2 id="a2h">One promise for twelve ventures</h2>
+      <p class="lede">Ventures that share the Snapp name also share each other's employer reputation. What one says, the others inherit.</p>
+    </div>
+    <div class="tdp">
+      <div><h3>Tension</h3><p>Job posters had different designs and messages. Slogans were scattered, with different perks and promises that weakened the brand. Hiring was traditional, and platforms carried the Snapp name without being used well. <span class="mk"><b>ADD</b> a number for the old state</span></p></div>
+      <div><h3>What I did</h3><p>I led the group-wide EVP from research to launch: survey design, insight analysis, messaging, bilingual content and the activation plan.</p></div>
+      <div><h3>Result</h3><p>Four pillars, twelve sub-pillars and one line: <strong>“Individually bold. Together, Masterpiece!”</strong></p></div>
+    </div>
+
+    <div class="epigraph">
+      <blockquote>“Each Impressionist painting has its own world at first glance, but a shared spirit connects them. <strong>This mirrors Snapp Group's story:</strong> each operational unit has its own character, yet all operate with a shared vision, expressing the same spirit in their own way.”
+        <p class="deck-src" style="margin-top:12px">The EVP deck, opening page</p></blockquote>
+      <figure class="swatches" id="swatches" aria-label="Twelve colors on one canvas">
+        <figcaption>Individually <b>bold</b>. Together, <b>Masterpiece!</b></figcaption>
+      </figure>
+    </div>
+
+    <!-- 2.1 -->
+    <div class="chapter">
+      <span class="mono">2.1 · Defining the EVP</span>
+      <h3>Statement <span>journey</span></h3>
+      <p>Start from the problem, test it against a framework, then ask three groups of people.</p>
+    </div>
+
+    <div class="panel" style="--ac-ink:var(--ink)">
+      <div class="sub" style="margin-top:0">
+        <div class="sub-h"><span class="mono">A</span><h3>Twelve voices, one structure</h3></div>
+        <p class="muted">Each venture had its own way of saying “we're hiring”. The EVP gave all of them one structure, and each kept its own color.</p>
+      </div>
+      <div class="posters" id="posters" aria-label="Twelve job posters, illustrated" role="img"></div>
+      <div class="poster-bar">
+        <button class="btn primary" id="evpBtn" type="button" aria-pressed="false">Apply the EVP</button>
+        <span class="ill">Illustration · wireframes, not real posters</span>
+        <p class="poster-note" id="posterNote">Before: twelve layouts, twelve slogans, twelve sets of promises.</p>
+      </div>
+
+      <div class="sub">
+        <div class="sub-h"><span class="mono">B</span><h3>A framework to test against</h3></div>
+        <p class="muted">We started from Gartner's five EVP categories. The highlighted items are where the three top-rated answers from our research belong.</p>
+        <div class="cats">
+          <div class="cat"><h4>Organisation</h4><ul class="leafcard"><li>Market position</li><li>Quality / reputation</li><li>Size</li><li>Social responsibility</li><li>Diversity</li><li>Ethics</li><li>Industry</li><li>Informality</li><li>Customer prestige</li><li>Empowerment</li></ul></div>
+          <div class="cat"><h4>Rewards</h4><ul class="leafcard"><li>Compensation</li><li>Health benefits</li><li>Retirement benefits</li><li>Annual leave</li><li>Flexible rewards</li></ul></div>
+          <div class="cat"><h4>People</h4><ul class="leafcard"><li>Camaraderie</li><li>Coworker quality</li><li>Manager quality</li><li>People management</li><li>Senior leadership</li></ul></div>
+          <div class="cat"><h4>Opportunity</h4><ul class="leafcard"><li class="hit"><span>Development opps</span></li><li class="hit"><span>Future career</span></li><li>Growth rate</li><li>Meritocracy</li><li>Business stability</li></ul></div>
+          <div class="cat"><h4>Work</h4><ul class="leafcard"><li>Travel</li><li class="hit"><span>Innovation</span></li><li>Job impact</li><li>Interest alignment</li><li>Location</li><li>Recognition</li><li>Work-life balance</li></ul></div>
+        </div>
+        <p class="deck-src" style="margin-top:12px">Framework: Gartner, EVP categories</p>
+      </div>
+
+      <div class="sub">
+        <div class="sub-h"><span class="mono">C</span><h3>Three perspectives, one overlap</h3></div>
+        <p class="muted">The EVP sits where three views meet: who leadership wants us to be, who our people say we are, and who outsiders think we are. Click a circle.</p>
+        <div class="vennx">
+          <svg class="vsvg" id="vsvg" viewBox="0 0 600 430" aria-label="Three overlapping circles with the EVP at their intersection">
+            <g class="c" data-k="lead" role="button" tabindex="0" aria-label="Leadership perspective"><circle cx="300" cy="150" r="118"/></g>
+            <g class="c" data-k="people" role="button" tabindex="0" aria-label="Our people perspective, 124 people"><circle cx="232" cy="268" r="118"/></g>
+            <g class="c" data-k="market" role="button" tabindex="0" aria-label="People perspective, 1,144 people"><circle cx="368" cy="268" r="118"/></g>
+            <path class="lens" id="lens" d=""/>
+            <text class="lens-t" x="300" y="236" text-anchor="middle" font-size="20">EVP</text>
+            <text class="q" x="300" y="20" text-anchor="middle">“Who you want to be”</text>
+            <text x="300" y="96" text-anchor="middle" font-size="15" font-weight="700">Leadership</text>
+            <text x="300" y="116" text-anchor="middle" font-size="15" font-weight="700">perspective</text>
+            <text x="300" y="138" text-anchor="middle" font-size="12" fill="var(--ink-2)">interviews</text>
+            <text x="196" y="292" text-anchor="middle" font-size="26" font-weight="800" font-family="var(--f-display)">124</text>
+            <text x="196" y="312" text-anchor="middle" font-size="13" font-weight="700">Our people</text>
+            <text x="196" y="328" text-anchor="middle" font-size="11" fill="var(--ink-2)">from various ventures</text>
+            <text x="404" y="292" text-anchor="middle" font-size="26" font-weight="800" font-family="var(--f-display)">1,144</text>
+            <text x="404" y="312" text-anchor="middle" font-size="13" font-weight="700">People</text>
+            <text x="404" y="328" text-anchor="middle" font-size="11" fill="var(--ink-2)">with a touchpoint</text>
+            <text class="q" x="110" y="412" text-anchor="middle">“Who you really are”</text>
+            <text class="q" x="490" y="412" text-anchor="middle">“Who people think you are”</text>
+          </svg>
+          <div class="vpanel" aria-live="polite">
+            <div class="seg" id="vSeg">
+              <button type="button" data-k="lead" aria-pressed="false">Leadership</button>
+              <button type="button" data-k="people" aria-pressed="true">Our people</button>
+              <button type="button" data-k="market" aria-pressed="false">Outside view</button>
+            </div>
+            <span class="mono muted" id="vQ"></span>
+            <span class="big" id="vBig"></span>
+            <p id="vT"></p>
+            <p class="deck-src">Model: Universum, Employer Branding, 2017</p>
+            <p><span class="mk"><b>CONFIRM</b> how the 124 and 1,144 were collected</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub">
+        <div class="sub-h"><span class="mono">D</span><h3>Top-rated opportunities</h3></div>
+        <p class="muted">The opportunities people rated highest at Snapp Group as an employer, from internal and external views. Word sizes follow the cloud in the EVP deck.</p>
+        <div class="wcloud" id="wcloud"></div>
+      </div>
+    </div>
+
+    <!-- 2.2 -->
+    <div class="chapter">
+      <span class="mono">2.2 · Crafting our EVP</span>
+      <h3>A collaborative <span>journey</span></h3>
+      <p>Five stages, from benchmarking to full rollout.</p>
+    </div>
+    <div class="panel">
+      <div class="jt" aria-label="EVP journey in five stages">
+        <div class="items up" style="--c:1"><span>Global and local EVP benchmarking</span><span>Leadership alignment</span></div>
+        <div class="stage first" style="--c:1"><b>Discovery</b></div>
+        <div class="stage" style="--c:2"><b>Research &amp; Strategy</b></div>
+        <div class="items down" style="--c:2"><span>Interviews and surveys</span><span>Shared value mapping</span><span>EVP pillar drafting</span><span>Feedback and revalidation</span></div>
+        <div class="items up" style="--c:3"><span>EVP tagline and key visuals</span><span>Communication program planning</span></div>
+        <div class="stage" style="--c:3"><b>Visual Identity &amp; Planning</b></div>
+        <div class="stage" style="--c:4"><b>Soft Launch</b></div>
+        <div class="items down" style="--c:4"><span>Collaborative EVP review with HR leadership</span><span>Finalizing the EVP document</span><span>Video shooting</span></div>
+        <div class="items up" style="--c:5"><span>Internal campaigns</span><span>External campaigns</span></div>
+        <div class="stage" style="--c:5"><b>Full Rollout</b></div>
+      </div>
+      <p class="deck-src" style="margin-top:14px">From the EVP deck: Snapp Group EVP journey</p>
+    </div>
+
+    <!-- 2.3 -->
+    <div class="chapter">
+      <span class="mono">2.3 · Our EVP</span>
+      <h3>Our palette, <span>our promise</span></h3>
+      <p>Four pillars, each with three sub-pillars, written in English and Persian. Each pillar adds one layer to the painting.</p>
+    </div>
+    <div class="panel">
+      <div class="pp">
+        <div><h4>This is our palette</h4><p>Each of us across every operational unit brings a unique color: our ideas, values and talents, to a shared canvas. Together, we create something greater than the sum of our parts. A Masterpiece!</p></div>
+        <div><h4>This is our promise</h4><p>To lead with purpose, work in harmony, grow through every experience, and boldly create what has never been done before.</p></div>
+      </div>
+
+      <div class="pgrid" role="tablist" aria-label="EVP pillars" id="pTabs"></div>
+      <div class="pdetail" role="tabpanel" id="pPanel" aria-live="polite">
+        <div class="pd-left">
+          <svg aria-hidden="true"><use id="pIcon" href="#ic-lead"/></svg>
+          <h4 id="pName"></h4>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-l="en" aria-pressed="true">EN</button>
+            <button type="button" data-l="fa" aria-pressed="false">فارسی</button>
+          </div>
+          <p class="fa" id="pFaHead" hidden></p>
+          <ul class="sq" id="pSubs"></ul>
+        </div>
+        <div class="pd-right">
+          <div><h5 id="pActH"></h5><p id="pAct"></p></div>
+          <div>
+            <h5 id="pBehH"></h5>
+            <svg class="paint" id="paint" viewBox="0 0 400 170" role="img" aria-label="A painting that gains one layer for each pillar"></svg>
+            <p class="paint-cap" id="paintCap" style="margin-top:8px"></p>
+            <blockquote><p id="pBeh" style="margin-top:8px"></p></blockquote>
+          </div>
+          <p class="deck-src">Pillar text quoted from the EVP deck · icons redrawn</p>
+        </div>
+      </div>
+      <p style="margin-top:12px"><span class="mk"><b>CONFIRM</b> which research findings drove which pillar</span></p>
+      <p class="bigline">Together, we will make a <b>Masterpiece!</b></p>
+    </div>
+
+    <!-- 2.4 -->
+    <div class="chapter">
+      <span class="mono">2.4 · Living our EVP</span>
+      <h3>Impact &amp; <span>activation plan</span></h3>
+      <p>Inside the group first, then outside. Everything below is the plan from the deck.</p>
+    </div>
+    <div class="panel">
+      <div class="sub" style="margin-top:0">
+        <div class="sub-h"><span class="mono">A</span><h3>Full rollout <span class="planned">Plan</span></h3></div>
+      </div>
+      <div class="tree" aria-label="Rollout plan tree">
+        <div class="t-root">Full rollout</div>
+        <div class="t-br">
+          <div class="t-row"><div class="t-node">Internal campaigns</div>
+            <div class="t-br">
+              <div class="t-row"><div class="t-node sm">Offline</div><ul class="t-leaves"><li>Environmental creative posters</li><li>EVP tableau exhibition</li><li>Video presentation</li></ul></div>
+              <div class="t-row"><div class="t-node sm">Online</div><ul class="t-leaves"><li>Communication to HR teams</li><li>Email and leadership messaging in the ventures</li><li>Newsletters</li></ul></div>
+            </div></div>
+          <div class="t-row"><div class="t-node">External campaigns</div>
+            <div class="t-br">
+              <div class="t-row"><div class="t-node sm">Offline</div><ul class="t-leaves"><li>Job fairs and targeted events</li><li>Gamified brochures for candidates</li></ul></div>
+              <div class="t-row"><div class="t-node sm">Online</div><ul class="t-leaves"><li>Video presentation</li><li>EVP in hiring and candidate experience</li><li>Career page and LinkedIn updates</li><li>Pillar-based campaigns</li></ul></div>
+            </div></div>
+        </div>
+      </div>
+      <p style="margin-top:12px"><span class="mk"><b>CONFIRM</b> which activation items actually ran</span></p>
+
+      <div class="sub">
+        <div class="sub-h"><span class="mono">B</span><h3>The launch film <span class="planned">Plan</span></h3></div>
+        <p class="muted">A full version of 2:30 to 3:00 minutes and a 30 to 45 second teaser. HR leaders speak to camera over footage of our people and workplace. Channels: the LinkedIn company page, the internal portal, onboarding and the screens in the building.</p>
+        <ol class="film">
+          <li><b>Scenario</b>The storyline</li>
+          <li><b>EVP reveal</b>Headline and core message, by HR leaders</li>
+          <li><b>Pillars</b>Each pillar and its sub-pillars, by HR leaders</li>
+          <li><b>Closing</b>A strategic, future-facing message</li>
+          <li><b>Final visual</b>EVP, values and logo together</li>
+        </ol>
+      </div>
+
+      <div class="sub">
+        <div class="cols2">
+          <div>
+            <h4>What we asked every venture to do</h4>
+            <ul class="sq"><li>Give feedback to improve the program</li><li>Join the video production</li><li>Use the EVP in internal campaigns and events</li><li>Engage teams in EVP programs and communications</li></ul>
+          </div>
+          <div>
+            <h4>Intended impact <span class="planned">Not measured</span></h4>
+            <table class="impact">
+              <thead><tr><th>Area</th><th>How the group EVP helps</th></tr></thead>
+              <tbody>
+                <tr><td>Employer branding resources</td><td>Ready-to-use content, templates and visuals</td></tr>
+                <tr><td>Candidate experience</td><td>Consistent, clear communication</td></tr>
+                <tr><td>Time and cost</td><td>Less effort building a brand from scratch</td></tr>
+                <tr><td>Internal engagement</td><td>Pride and belonging through shared values</td></tr>
+                <tr><td>Strategic alignment</td><td>Hiring and culture messages that match</td></tr>
+              </tbody>
+            </table>
+            <p style="margin-top:8px"><span class="mk"><b>ADD</b> one measured EVP outcome</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="bridge">A promise needs a home.</p>
+  </section>
+
+  <!-- ACT 3 -->
+  <section class="act" id="act-3" data-act="3" data-name="Career page" style="--ac:var(--v9)" aria-labelledby="a3h">
+    <span class="act-bead" aria-hidden="true"></span>
+    <div class="act-head">
+      <span class="act-num mono">Act 3 of 6 · Central career page</span>
+      <h2 id="a3h">One door for twelve ventures</h2>
+      <p class="lede">A candidate should not need to know the org chart to find the right job.</p>
+    </div>
+    <div class="tdp">
+      <div><h3>Tension</h3><p>Tone, structure and messaging differed from venture to venture. Candidates met a fragmented brand and a fragmented experience.</p></div>
+      <div><h3>What I did</h3><p>I built one central career page that covers all 12 ventures. I worked directly with each venture's CEO and HR head to turn their culture into candidate-facing content, inside one shared EVP structure.</p></div>
+      <div><h3>Result</h3><p>Recently published. I now send a daily report on the career site's performance. Results are early. <span class="mk"><b>ADD</b> 1–2 numbers from the daily report</span></p></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>How the page is built</h3><span class="ill">Illustration · click a venture</span></div>
+      <div class="site-wrap">
+        <div class="browser" aria-label="Illustrated structure of the central career page">
+          <div class="b-bar"><i></i><i></i><i></i><span class="b-url">careers.snappgroup.net/en</span></div>
+          <div class="b-body">
+            <div class="b-hero"><svg class="b-logo" viewBox="0 0 27 56" fill="currentColor" aria-label="Snapp Group logo" role="img"><path d="M13.1424 0L4 34H11.5995C15.2768 34 18.4923 31.5854 19.4154 28.138L27 0H13.1424Z"/><path d="M8.49979 40C3.80496 40 0 43.5811 0 48.0002C0 52.4189 3.80496 56 8.49979 56C13.195 56 17 52.4189 17 48.0002C17 43.5811 13.195 40 8.49979 40Z"/></svg><b>Find your next opportunity</b><div class="b-dots" id="bDots"></div><div class="b-search"></div></div>
+            <span class="b-sec">Our palette, our promise · 4 EVP pillars</span>
+            <div class="b-pillars"><div>Lead with Purpose</div><div>Create the Firsts</div><div>Grow with Experience</div><div>Believe in Harmony</div></div>
+            <span class="b-sec">Twelve ventures</span>
+            <div class="tiles" id="tiles"></div>
+          </div>
+        </div>
+        <div class="v-detail" id="vDetail" aria-live="polite">
+          <span class="mono muted" id="vTag">Venture 01</span>
+          <h4 id="vName">Snapp Cab</h4>
+          <ul>
+            <li>Culture and story, written with the venture's CEO and HR head</li>
+            <li>Its own open roles</li>
+            <li>The four shared EVP pillars, seen through its own work</li>
+          </ul>
+          <p style="font-size:.875rem"><a id="vLink" href="https://career.snapp.ir/" target="_blank" rel="noopener">See its careers page ↗</a></p>
+        </div>
+      </div>
+      <div class="facts">
+        <span class="fact"><b>1</b> career page</span>
+        <span class="fact"><b>12</b> ventures covered</span>
+        <span class="fact"><b>CEO + HR head</b> of every venture, worked with directly</span>
+        <span class="fact"><b>Daily</b> performance report</span>
+      </div>
+      <p style="margin-top:16px"><a href="https://careers.snappgroup.net/en" target="_blank" rel="noopener">Visit the live page: careers.snappgroup.net/en ↗</a></p>
+    </div>
+
+    <p class="bridge">A home needs a voice.</p>
+  </section>
+
+  <!-- ACT 4 -->
+  <section class="act" id="act-4" data-act="4" data-name="LinkedIn" style="--ac:var(--v7)" aria-labelledby="a4h">
+    <span class="act-bead" aria-hidden="true"></span>
+    <div class="act-head">
+      <span class="act-num mono">Act 4 of 6 · LinkedIn</span>
+      <h2 id="a4h">A voice with a plan behind it</h2>
+      <p class="lede">The promise needed to be heard every week, not only on launch day.</p>
+    </div>
+    <div class="tdp">
+      <div><h3>Tension</h3><p>Content had no structured, unified strategy and no measurable goals.</p></div>
+      <div><h3>What I did</h3><p>I run the employer-brand content strategy. I set quarterly goals, write the LinkedIn content for every event, and run targeted campaigns.</p></div>
+      <div><h3>Result</h3><p>One EVP-aligned voice for the group, tracked every quarter against goals for activity, engagement and followers.</p></div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>The quarterly loop</h3><span class="ill">How I run it</span></div>
+      <ol class="loop">
+        <li><h4>Set the quarter's goals</h4><p>Three measures, set at the start of every quarter.</p><div class="chips" style="--pc:var(--v7)"><span>Activity</span><span>Engagement</span><span>Followers</span></div></li>
+        <li><h4>Write every event</h4><p>Each fair, talk and program gets its own LinkedIn story, written by me.</p></li>
+        <li><h4>Run targeted campaigns</h4><p>Campaigns aimed at the audiences we need to reach.</p></li>
+        <li><h4>Review against goals</h4><p>Results feed the next quarter's plan.</p></li>
+      </ol>
+      <p class="loop-back mono">Repeat every quarter</p>
+    </div>
+
+    <p class="bridge">And a voice needs a room where people can meet you.</p>
+  </section>
+
+  <!-- ACT 5 -->
+  <section class="act" id="act-5" data-act="5" data-name="Job fairs" style="--ac:var(--v11)" aria-labelledby="a5h">
+    <span class="act-bead" aria-hidden="true"></span>
+    <div class="act-head">
+      <span class="act-num mono">Act 5 of 6 · Job fairs</span>
+      <h2 id="a5h">Twelve ventures, one booth, three fairs</h2>
+      <p class="lede">One at the University of Tehran and two at Sharif University of Technology. All 12 ventures came to each, each with its own openings.</p>
+    </div>
+    <div class="tdp">
+      <div><h3>Tension</h3><p>Twelve ventures, each with different roles to fill, had to appear as one employer in one booth.</p></div>
+      <div><h3>What I did</h3><p>I managed the contact with every venture, the slogan, the booth design and the activities.</p></div>
+      <div><h3>Result</h3><p>Our rank among 50 companies went from 5th to 3rd to 2nd. On average each fair brought about 10 junior hires and 2 specialists.</p></div>
+    </div>
+
+    <div class="panel" id="rankPanel">
+      <div class="panel-head"><h3>Employer rank at each fair</h3><span class="ill">Drawn to scale</span></div>
+      <div class="chart-wrap">
+        <div>
+        <svg class="rank" viewBox="0 0 560 304" role="img" aria-labelledby="rankT">
+          <title id="rankT">Rank among 50 companies: 5th at fair 1, 3rd at fair 2, 2nd at fair 3. The EVP and Color and Canvas were in place for fairs 2 and 3.</title>
+          <rect class="shade" x="225" y="24" width="317" height="246" rx="8"/>
+          <text x="383" y="42" text-anchor="middle" font-size="12" font-family="var(--f-mono)" fill="var(--accent-ink)">EVP + COLOR AND CANVAS IN PLACE</text>
+          <line class="grid" x1="60" x2="542" y1="48" y2="48"/><text class="axis" x="48" y="52" text-anchor="end">#1</text><line class="grid" x1="60" x2="542" y1="90" y2="90"/><text class="axis" x="48" y="94" text-anchor="end">#2</text><line class="grid" x1="60" x2="542" y1="132" y2="132"/><text class="axis" x="48" y="136" text-anchor="end">#3</text><line class="grid" x1="60" x2="542" y1="174" y2="174"/><text class="axis" x="48" y="178" text-anchor="end">#4</text><line class="grid" x1="60" x2="542" y1="216" y2="216"/><text class="axis" x="48" y="220" text-anchor="end">#5</text><line class="grid" x1="60" x2="542" y1="258" y2="258"/><text class="axis" x="48" y="262" text-anchor="end">#6</text>
+          <polyline class="line" points="140,216 310,132 470,90"/>
+          <circle class="pt" cx="140" cy="216" r="8"/><circle class="pt" cx="310" cy="132" r="8"/><circle class="pt last" cx="470" cy="90" r="9"/>
+          <text x="140" y="198" text-anchor="middle" font-size="18" font-weight="800" font-family="var(--f-display)">#5</text>
+          <text x="310" y="114" text-anchor="middle" font-size="18" font-weight="800" font-family="var(--f-display)">#3</text>
+          <text x="470" y="72" text-anchor="middle" font-size="18" font-weight="800" font-family="var(--f-display)">#2</text>
+          <text class="axis" x="140" y="292" text-anchor="middle">Fair 1</text>
+          <text class="axis" x="310" y="292" text-anchor="middle">Fair 2</text>
+          <text class="axis" x="470" y="292" text-anchor="middle">Fair 3</text>
+          
+        </svg>
+        <p class="muted" style="font-size:.8125rem;margin-top:6px">Rank among 50 companies (#1 = best), by how positively respondents viewed each company as an employer.</p>
+        </div>
+        <div>
+          <p class="mono muted" style="margin-bottom:10px">At the fair where we ranked 2nd</p>
+          <div class="kpis">
+            <div class="kpi"><b>4,453</b><span>résumés received</span></div>
+            <div class="kpi"><b>7.8</b><span>survey score <span class="mk"><b>CONFIRM</b> out of 10?</span></span></div>
+            <div class="kpi"><b>~10</b><span>junior hires per fair, on average</span></div>
+            <div class="kpi"><b>~2</b><span>specialist hires per fair, on average</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="caution">The EVP and the Color and Canvas slogan were in place for the last two fairs only. The chart shows the order of events. It does not prove that the EVP caused the change.</p>
+      <p style="margin-top:12px"><span class="mk"><b>ADD</b> anonymized Excel scorecard: cost per résumé and cost per hire as an index, first fair = 100</span></p>
+      <div class="photos">
+        <figure><img src="assets/photos/job-fair-2024.jpg" alt="The Snapp Group booth at the 2024 job fair, team members talking with candidates at laptops" loading="lazy" width="1100" height="704"><figcaption>Job fair 2024: the group booth, one stand for all twelve ventures.</figcaption></figure>
+        <figure><img src="assets/photos/job-fair-2023.jpg" alt="Visitors painting a large banner on the floor at the booth with pink paint and long brushes" loading="lazy" width="1100" height="990"><figcaption>Job fair 2023: a booth activity where visitors painted the banner.</figcaption></figure>
+      </div>
+    </div>
+
+    <p class="bridge">Meeting is not enough. The real test is whether people choose to stay.</p>
+  </section>
+
+  <!-- ACT 6 -->
+  <section class="act" id="act-6" data-act="6" data-name="Universities" style="--ac:var(--v4)" aria-labelledby="a6h">
+    <span class="act-bead" aria-hidden="true"></span>
+    <div class="act-head">
+      <span class="act-num mono">Act 6 of 6 · University programs</span>
+      <h2 id="a6h">From first contact to first promotion</h2>
+      <p class="lede">Three programs, each designed end to end, each a different way for students to try the group before they choose it.</p>
+    </div>
+
+    <div class="panel" id="uniPanel">
+      <div class="tablist" role="tablist" aria-label="University programs">
+        <button role="tab" id="tab-boot" aria-controls="p-boot" aria-selected="true" type="button">Product Management Bootcamp</button>
+        <button role="tab" id="tab-fin" aria-controls="p-fin" aria-selected="false" tabindex="-1" type="button">Finance Talk</button>
+        <button role="tab" id="tab-pol" aria-controls="p-pol" aria-selected="false" tabindex="-1" type="button">Polaris graduate program</button>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-boot" aria-labelledby="tab-boot" tabindex="0">
+        <div>
+          <h4>Five weeks at Sharif, taught by all 12 ventures</h4>
+          <p class="meta">Instructors came from each of the twelve ventures.</p>
+          <div class="funnel" aria-label="Bootcamp funnel, drawn to scale">
+            <div class="f-row"><span>Requested a place</span><div class="f-track"><i class="f-bar" style="width:calc(100% - 48px);--fc:var(--line-2)"></i><b>250</b></div></div>
+            <div class="f-row"><span>Accepted</span><div class="f-track"><i class="f-bar" style="width:calc((100% - 48px) * 40 / 250);--fc:var(--taupe)"></i><b>40</b></div></div>
+            <div class="f-row"><span>Attended</span><div class="f-track"><i class="f-bar" style="width:calc((100% - 48px) * 33 / 250);--fc:var(--navy)"></i><b>33</b></div></div>
+            <div class="f-row"><span>Asked to join Snapp Group</span><div class="f-track"><i class="f-bar" style="width:calc((100% - 48px) * 21 / 250);--fc:var(--v4)"></i><b>21</b></div></div>
+            <div class="f-row"><span>Hired, since promoted</span><div class="f-track"><i class="f-bar" style="width:calc((100% - 48px) * 4 / 250);--fc:var(--accent)"></i><b>4</b></div></div>
+          </div>
+          <p class="mono muted" style="font-size:.72rem">Bars share one scale. 21 of 33 attendees is 64%.</p>
+          <ul class="did">
+            <li>I built the landing page and its content</li>
+            <li>I designed the entry test and ran the selection interviews</li>
+            <li>I managed the instructors, the academic lead and the content</li>
+            <li>I interviewed participants and ran the program</li>
+          </ul>
+        </div>
+        <figure class="tab-photo"><img src="assets/photos/pm-bootcamp.jpg" alt="Bootcamp session in a university conference room, participants seated around a large table with group-branded bags" loading="lazy" width="1100" height="918"><figcaption>PM Bootcamp 2023 at Sharif University of Technology.</figcaption></figure>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-fin" aria-labelledby="tab-fin" tabindex="0" hidden>
+        <div>
+          <h4>Finance Talk at the University of Tehran</h4>
+          <p class="meta">Open to students of every university through registration, announced in specialist university channels. The speakers were senior leaders from across the group.</p>
+          <p><strong>Goal:</strong> engage our own leaders and show the group as one ecosystem. Hiring was not the goal.</p>
+          <div class="kpis" style="margin-top:16px">
+            <div class="kpi"><b>~300</b><span>participants <span class="mk"><b>CONFIRM</b> 300 or 335 in total</span></span></div>
+            <div class="kpi"><b>5</b><span>hires, although hiring was not the goal</span></div>
+            <div class="kpi"><b>67</b><span>NPS</span></div>
+            <div class="kpi"><b>100%</b><span>of the plan delivered on the reduced budget</span></div>
+          </div>
+          <p class="mono muted" style="margin:18px 0 8px">Budget, as an index (first request = 100)</p>
+          <div class="budget">
+            <div class="f-row"><span>First request</span><div class="f-track"><i class="f-bar" style="width:calc(100% - 48px);--fc:var(--line-2)"></i><b>100</b></div></div>
+            <div class="f-row"><span>Approved, delivered in full</span><div class="f-track"><i class="f-bar" style="width:calc((100% - 48px) * .7);--fc:var(--v4)"></i><b>70</b></div></div>
+          </div>
+        </div>
+        <figure class="tab-photo"><img src="assets/photos/finance-talk.jpg" alt="Two students posing with a social-media style photo frame at the Finance Talk event" loading="lazy" width="1100" height="923"><figcaption>Finance Talk 2025 at the University of Tehran.</figcaption></figure>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-pol" aria-labelledby="tab-pol" tabindex="0" hidden>
+        <div>
+          <h4>Polaris: top graduates, placed across the group</h4>
+          <p class="meta">A graduate program built so that the best students start with support, not just an offer.</p>
+          <ol class="steps">
+            <li><div><b>Invite</b><br><span class="muted">Top-ranked students from four leading universities</span></div></li>
+            <li><div><b>Interview and offer</b><br><span class="muted">Selection interviews, then offers</span></div></li>
+            <li><div><b>Place</b><br><span class="muted">Graduates placed across ventures</span></div></li>
+            <li><div><b>Onboard</b><br><span class="muted">Group-wide onboarding</span></div></li>
+            <li><div><b>Support</b><br><span class="muted">Weekly support sessions and monthly manager reviews</span></div></li>
+          </ol>
+        </div>
+        <div class="kpis" style="grid-template-columns:minmax(0,1fr)">
+          <div class="kpi"><b>4</b><span>leading universities invited</span></div>
+          <div class="kpi"><span><span class="mk"><b>ADD</b> cohort size</span></span><span><span class="mk"><b>ADD</b> retention</span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kept">
+      <span class="n" aria-hidden="true">4</span>
+      <p>The promise said “grow through every experience.” Four people we hired from the bootcamp have since been promoted.
+        <small>250 asked for a place, 33 attended, 21 asked to join, and four have since grown inside the group. That is the promise, kept.</small></p>
+    </div>
+  </section>
+
+  <!-- FIT -->
+  <section class="block" id="fit" aria-labelledby="fith">
+    <h2 id="fith">What the role asks for, and where I've done it</h2>
+    <p class="lede">The Deloitte posting, line by line, next to evidence from this page.</p>
+    <div class="table-scroll">
+      <table class="fit">
+        <thead><tr><th>The posting asks for</th><th>My evidence</th><th>Match</th></tr></thead>
+        <tbody>
+          <tr><td>University partnerships and career fairs</td><td>Three fairs at the University of Tehran and Sharif, all 12 ventures at each; rank 5th → 3rd → 2nd among 50. Polaris drew top students from four leading universities. <a href="#act-5">Act 5</a></td><td><span class="pill strong">Strong</span></td></tr>
+          <tr><td>Student events, start to finish</td><td>Bootcamp: landing page, entry test, interviews, instructors, delivery. Finance Talk for students of all universities. <a href="#act-6">Act 6</a></td><td><span class="pill strong">Strong</span></td></tr>
+          <tr><td>Local strategy and budget</td><td>Group EVP and its activation plan. Finance Talk approved 30% below the first request and delivered in full. Projects delivered under cost-cutting constraints. <a href="#act-2">Act 2</a></td><td><span class="pill strong">Strong</span></td></tr>
+          <tr><td>Campaigns and materials</td><td>Booth design, slogans and activities for three fairs; LinkedIn content for every event; targeted campaigns; bootcamp landing page. <a href="#act-4">Act 4</a></td><td><span class="pill strong">Strong</span></td></tr>
+          <tr><td>Excel and data analysis</td><td>EVP research with 124 internal and 1,144 external respondents; daily career-site report; quarterly LinkedIn goals. Tools: Excel, Figma (intermediate). <span class="mk"><b>ADD</b> sample scorecard</span></td><td><span class="pill strong">Strong</span></td></tr>
+          <tr><td>Regional coordination</td><td>Coordinated 12 ventures with different customers, CEOs and HR heads into one employer brand, one career page and one booth. <a href="#act-3">Act 3</a></td><td><span class="pill partial">Transferable</span></td></tr>
+          <tr><td>Contract, invoice and vendor admin</td><td>Managed project budgets for employer-branding and people-experience work. <span class="mk"><b>CONFIRM</b> vendor, contract and invoice examples</span></td><td><span class="pill partial">Partial</span></td></tr>
+          <tr><td>Fluent Romanian and English</td><td>English: professional working proficiency. Romanian: A2, learning actively. Turkish: professional working proficiency.</td><td><span class="pill building">Building</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 90 DAYS -->
+  <section class="block" id="plan" aria-labelledby="planh">
+    <h2 id="planh">My first 90 days in Bucharest</h2>
+    <p class="lede">The same order as the story: learn who we are, build the promise locally, then build the places students meet it.</p>
+    <div class="plan">
+      <div class="phase"><span class="mono">Days 1–30</span><h3>Listen</h3><ul><li>Meet the Central Europe employer-branding team and Romania's business and talent leads</li><li>Learn the Deloitte EVP, brand rules and approval routes</li><li>Map university partners, the fair calendar, vendors and contracts</li><li>Review last year's budget and results</li></ul></div>
+      <div class="phase"><span class="mono">Days 31–60</span><h3>Build</h3><ul><li>Draft Romania's local plan and budget, aligned with the regional plan</li><li>Set up a simple Excel scorecard: cost per résumé and cost per hire as an index</li><li>Refresh fair and campus materials inside the brand rules</li><li>Plan the first student event end to end</li></ul></div>
+      <div class="phase"><span class="mono">Days 61–90</span><h3>Show results</h3><ul><li>Run the first event and report against the scorecard</li><li>Share what worked with the other Central Europe countries</li><li>Propose the next academic year's partnership calendar</li><li>Keep building my Romanian, every week</li></ul></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="ch">
+    <div>
+      <h2 id="ch">Let's talk</h2>
+      <p class="lede">I'm based in Romania and ready for the assessment. I'm happy to walk through any number on this page.</p>
+      <div class="cta">
+        <a class="btn primary" href="assets/Reyhaneh_Golestani_CV.pdf" target="_blank" rel="noopener">Open the PDF résumé</a>
+        <a class="btn" href="https://www.linkedin.com/in/reyhanegolestani" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="c-list">
+      <div class="c-row"><div><span class="mono">Email</span><span class="val" id="cEmail">reyhanehgolestani75@gmail.com</span></div><button class="btn small" type="button" data-copy="cEmail">Copy</button></div>
+      <div class="c-row"><div><span class="mono">Phone</span><span class="val" id="cPhone">534 619 1692</span><span class="mk"><b>CONFIRM</b> country code</span></div><button class="btn small" type="button" data-copy="cPhone">Copy</button></div>
+      <div class="c-row"><div><span class="mono">LinkedIn</span><span class="val" id="cLi">linkedin.com/in/reyhanegolestani</span></div><button class="btn small" type="button" data-copy="cLi">Copy</button></div>
+      <div class="c-row"><div><span class="mono">Location</span><span class="val">Romania</span></div></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>All diagrams, posters and the career-page structure are illustrations redrawn for this page. The Snapp Group and venture logos come from the live career site, careers.snappgroup.net; no other real logos, posters or leader names are used. Photos come from my portfolio.</p>
+    <p>All projects on this page were led and delivered by me at Snapp Group, Sep 2022 to present. Figures come from my own records; costs appear only as an index.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  // Set to false before sending the link so ADD / CONFIRM notes start hidden.
+  var SHOW_MARKERS_DEFAULT = true;
+  var root = document.documentElement;
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var SVGNS = "http://www.w3.org/2000/svg";
+  var V = ["--v1","--v2","--v3","--v4","--v5","--v6","--v7","--v8","--v9","--v10","--v11","--v12"].map(function(v){return "var("+v+")";});
+  function $(s,c){return (c||document).querySelector(s);}
+  function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));}
+  function el(tag,attrs,parent){var e=document.createElementNS(SVGNS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+
+  /* Markers */
+  var mkBtn=$("#mkToggle"), mkLabel=$("#mkLabel");
+  var hideMk = !SHOW_MARKERS_DEFAULT || /clean/.test(location.hash) || /clean/.test(location.search);
+  function syncMk(){root.classList.toggle("hide-mk",hideMk);mkBtn.setAttribute("aria-pressed",String(hideMk));mkLabel.textContent=hideMk?"Show notes":"Hide notes";}
+  syncMk();
+  mkBtn.addEventListener("click",function(){hideMk=!hideMk;syncMk();});
+
+  /* Hero art */
+  (function(){
+    var svg=$("#heroSvg");
+    el("rect",{x:"36",y:"36",width:"328",height:"328",rx:"18",fill:"var(--surface)",stroke:"var(--line-2)","stroke-width":"1.5"},svg);
+    var strokes=[[60,300,180,250,"--v3"],[120,120,330,90,"--v7"],[210,320,350,260,"--v5"],[70,190,190,150,"--v4"]];
+    strokes.forEach(function(s,i){el("path",{d:"M"+s[0]+","+s[1]+" Q"+((s[0]+s[2])/2)+","+(s[1]-40)+" "+s[2]+","+s[3],fill:"none",stroke:"var("+s[4]+")","stroke-width":"22","stroke-linecap":"round",opacity:".22"},svg);});
+    var path=el("path",{d:"M36,230 C110,120 170,320 220,200 S320,110 364,170",fill:"none",stroke:"var(--ink)","stroke-width":"2.5","stroke-linecap":"round"},svg);
+    var L=path.getTotalLength();
+    for(var i=0;i<12;i++){var p=path.getPointAtLength(L*(i+.5)/12);var g=el("g",{},svg);var c=el("circle",{cx:p.x.toFixed(1),cy:p.y.toFixed(1),r:"13",fill:V[i],stroke:"var(--surface)","stroke-width":"3"},g);
+      if(!reduce){g.setAttribute("class","bob");g.style.animationDelay=(i*-.33)+"s";}}
+  })();
+
+  /* Act 1 scene */
+  (function(){
+    var svg=$("#scene"), beadsG=$("#beads"), strokesG=$("#strokes"), thread=$("#thread"), you=$("#you");
+    var STEPS=[
+      ["Twelve businesses, one name","Snapp Group is a technology group of 12 ventures, B2B and B2C, each with its own customers and services."],
+      ["What is Central for?","A supporter, the leader and decision-maker, or just another venture? Without an answer, branding decisions stalled, and global best practice did not fit."],
+      ["I asked first","Before designing anything, I asked colleagues and stakeholders what they believed Central's mission was, and what intent it was founded on."],
+      ["Color and Canvas","The group is the canvas. Ventures are the colors: brands, businesses, cultures. Central is the thread that supports and connects them. Click any bead to paint."],
+      ["A color is a person, too","For a candidate, a color is their outlook, knowledge and talent. They can pick up the brush, and even try different ventures inside the ecosystem."],
+      ["The line","“Bring your color to the canvas, together we will make a masterpiece.” Keep painting: click the beads."]
+    ];
+    var scatter=[[78,64],[196,338],[566,76],[340,40],[598,318],[110,214],[456,356],[262,146],[528,206],[46,350],[392,262],[176,98]];
+    var ring=[],strung=[],L=thread.getTotalLength();
+    for(var i=0;i<12;i++){var a=-Math.PI/2+i*Math.PI/6;ring.push([320+Math.cos(a)*112,200+Math.sin(a)*112]);var p=thread.getPointAtLength(L*(i+.5)/12);strung.push([p.x,p.y]);}
+    var beads=[];
+    for(var j=0;j<12;j++){(function(j){
+      var g=el("g",{class:"bead","data-i":j},beadsG);
+      el("circle",{r:"14",fill:V[j]},g);
+      g.addEventListener("click",function(){if(step>=4)paint(j);});
+      g.addEventListener("keydown",function(e){if((e.key==="Enter"||e.key===" ")&&step>=4){e.preventDefault();paint(j);}});
+      beads.push(g);
+    })(j);}
+    function place(g,xy){g.style.transform="translate("+xy[0].toFixed(1)+"px,"+xy[1].toFixed(1)+"px)";}
+    var step=1, youTimer=null, playTimer=null, youIdx=0;
+    var dots=$("#stepDots");
+    STEPS.forEach(function(s,i){var b=document.createElement("button");b.type="button";b.textContent=i+1;b.setAttribute("aria-label","Step "+(i+1)+": "+s[0]);b.addEventListener("click",function(){stopPlay();go(i+1);});dots.appendChild(b);});
+    function go(n){
+      step=Math.max(1,Math.min(6,n));
+      var pos = step<=2?scatter: step===3?ring: strung;
+      beads.forEach(function(g,i){place(g,pos[i]);var live=step>=4;g.classList.toggle("live",live);
+        if(live){g.setAttribute("tabindex","0");g.setAttribute("role","button");g.setAttribute("aria-label","Paint with venture color "+(i+1));}else{g.removeAttribute("tabindex");g.removeAttribute("role");g.removeAttribute("aria-label");}});
+      $$(".layer",svg).forEach(function(l){var r=l.getAttribute("data-show").split("-");l.classList.toggle("on",step>=+r[0]&&step<=+r[1]);});
+      $("#centralLabel").textContent = step===3?"Central":"Central?";
+      $("#stepNum").textContent="Step "+step+" of 6";
+      $("#stepTitle").textContent=STEPS[step-1][0];
+      $("#stepText").textContent=STEPS[step-1][1];
+      $$("button",dots).forEach(function(b,i){if(i===step-1)b.setAttribute("aria-current","step");else b.removeAttribute("aria-current");});
+      $("#stepPrev").disabled=step===1;
+      $("#stepNext").textContent= step===6?"Start again":"Next step";
+      $("#clearPaint").hidden = step<4;
+      clearInterval(youTimer);
+      if(step===5){var path=[1,5,9];youIdx=0;place(you,[strung[path[0]][0],strung[path[0]][1]-34]);
+        if(!reduce)youTimer=setInterval(function(){youIdx=(youIdx+1)%path.length;var p=strung[path[youIdx]];place(you,[p[0],p[1]-34]);},1500);}
+    }
+    function paint(i){
+      var o=step>=4?strung[i]:scatter[i], r=function(a,b){return a+Math.random()*(b-a);};
+      var x0=o[0]+r(-30,30),y0=Math.max(80,Math.min(320,o[1]+r(-60,60)));
+      var x3=Math.max(60,Math.min(580,x0+r(-180,180))),y3=Math.max(80,Math.min(325,y0+r(-70,70)));
+      var d="M"+x0.toFixed(0)+","+y0.toFixed(0)+" C"+(x0+r(-60,60)).toFixed(0)+","+(y0+r(-60,60)).toFixed(0)+" "+(x3+r(-60,60)).toFixed(0)+","+(y3+r(-60,60)).toFixed(0)+" "+x3.toFixed(0)+","+y3.toFixed(0);
+      var p=el("path",{d:d,class:"stroke",stroke:V[i],"stroke-width":r(14,26).toFixed(0)},strokesG);
+      var len=p.getTotalLength();p.style.strokeDasharray=len;p.style.strokeDashoffset=reduce?0:len;
+      requestAnimationFrame(function(){requestAnimationFrame(function(){p.style.strokeDashoffset=0;});});
+      while(strokesG.childNodes.length>40)strokesG.removeChild(strokesG.firstChild);
+    }
+    function stopPlay(){clearInterval(playTimer);playTimer=null;}
+    $("#stepPrev").addEventListener("click",function(){stopPlay();go(step-1);});
+    $("#stepNext").addEventListener("click",function(){stopPlay();go(step===6?1:step+1);});
+    $("#clearPaint").addEventListener("click",function(){while(strokesG.firstChild)strokesG.removeChild(strokesG.firstChild);});
+    go(1);
+    // When the scene first scrolls into view, play steps 1→4 once so the idea forms on its own.
+    if(!reduce && "IntersectionObserver" in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){io.disconnect();
+        playTimer=setInterval(function(){if(step>=4){stopPlay();[0,4,8].forEach(function(k,n){setTimeout(function(){paint(k);},n*350);});return;}go(step+1);},2600);}});},{threshold:.6});
+      io.observe(svg);
+    }
+  })();
+
+  /* Act 2 posters */
+  (function(){
+    var wrap=$("#posters"), btn=$("#evpBtn"), note=$("#posterNote");
+    var old=["WE'RE HIRING!","Join us","CAREERS","Work with us","Apply now!!","Open roles","BE ONE OF US","Your next job","Hiring now","JOIN THE TEAM","We need you","Grow here"];
+    var fonts=["700 1em/1.1 Georgia, serif","500 1em/1.1 var(--f-mono)","800 1em/1.1 var(--f-display)","italic 600 1em/1.1 var(--f-body)"];
+    var greys=["#C9C4BA","#A9B4C2","#D8C6A8","#B9C7B5","#C6B3C6","#9AA3AD"];
+    var pill=["Lead with Purpose","Create the Firsts","Grow with Experience","Believe in Harmony"];
+    function rnd(seed){var x=Math.sin(seed*9301+49297)*233280;return x-Math.floor(x);}
+    for(var i=0;i<12;i++){
+      var r=function(k){return rnd(i*7+k);};
+      var p=document.createElement("div");p.className="poster";
+      var s=p.style;
+      s.setProperty("--vc",V[i]);
+      s.setProperty("--rot",((r(1)-.5)*8).toFixed(1)+"deg");
+      s.setProperty("--rad",Math.round(r(2)*20)+"px");
+      var bt=r(3)>.5?Math.round(r(4)*50):0;
+      s.setProperty("--bt",bt+"%");s.setProperty("--bl",(r(5)>.6?Math.round(r(6)*30):0)+"%");
+      s.setProperty("--bw",(55+Math.round(r(7)*45))+"%");s.setProperty("--bh",(18+Math.round(r(8)*30))+"%");
+      s.setProperty("--bbg",greys[Math.floor(r(9)*greys.length)]);
+      s.setProperty("--brad",(r(10)>.5?"50%":"0"));
+      s.setProperty("--wt",(bt>25?10:56)+"%");
+      s.setProperty("--wf",fonts[Math.floor(r(11)*fonts.length)]);
+      s.setProperty("--wa",["left","center","right"][Math.floor(r(12)*3)]);
+      s.setProperty("--ll",(8+Math.round(r(13)*20))+"%");
+      s.setProperty("--lw1",(30+Math.round(r(14)*50))+"%");s.setProperty("--lw2",(20+Math.round(r(15)*40))+"%");
+      s.setProperty("--cr",(Math.round(r(16)*50))+"%");s.setProperty("--crad",(r(17)>.5?"999px":"2px"));
+      s.setProperty("--cbg",greys[Math.floor(r(18)*greys.length)]);
+      p.innerHTML='<i class="p-band"></i><span class="p-dot"></span><span class="p-word"><span class="o"></span><span class="n"></span></span><i class="p-l1"></i><i class="p-l2"></i><i class="p-cta"></i>';
+      p.querySelector(".o").textContent=old[i];
+      p.querySelector(".n").textContent=pill[i%4];
+      wrap.appendChild(p);
+    }
+    btn.addEventListener("click",function(){
+      var on=!wrap.classList.contains("evp-on");wrap.classList.toggle("evp-on",on);
+      btn.setAttribute("aria-pressed",String(on));btn.textContent=on?"Show the old state":"Apply the EVP";
+      note.textContent=on?"After: one structure and one promise, in twelve colors. Each poster leads with a pillar.":"Before: twelve layouts, twelve slogans, twelve sets of promises.";
+    });
+  })();
+
+  /* Act 2 swatches */
+  (function(){var f=$("#swatches"),cap=f.querySelector("figcaption");for(var i=0;i<12;i++){var s=document.createElement("i");s.style.setProperty("--vc",V[i]);f.insertBefore(s,cap);}})();
+
+  /* Act 2 Venn: draw the exact three-way intersection as the yellow EVP lens */
+  (function(){
+    var C=$$("#vsvg circle").map(function(c){return {x:+c.getAttribute("cx"),y:+c.getAttribute("cy"),r:+c.getAttribute("r")};});
+    function inter(a,b,c){ // intersection of circles a and b that lies inside c
+      var dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy),l=(a.r*a.r-b.r*b.r+d*d)/(2*d),h=Math.sqrt(a.r*a.r-l*l);
+      var mx=a.x+dx*l/d,my=a.y+dy*l/d,p1={x:mx+h*dy/d,y:my-h*dx/d},p2={x:mx-h*dy/d,y:my+h*dx/d};
+      return Math.hypot(p1.x-c.x,p1.y-c.y)<c.r?p1:p2;
+    }
+    function arc(o,p,q){var cr=(p.x-o.x)*(q.y-o.y)-(p.y-o.y)*(q.x-o.x);return "A"+o.r+" "+o.r+" 0 0 "+(cr>0?1:0)+" "+q.x.toFixed(1)+" "+q.y.toFixed(1);}
+    var A=C[0],B=C[1],Cc=C[2],pab=inter(A,B,Cc),pac=inter(A,Cc,B),pbc=inter(B,Cc,A);
+    $("#lens").setAttribute("d","M"+pab.x.toFixed(1)+" "+pab.y.toFixed(1)+arc(A,pab,pac)+arc(Cc,pac,pbc)+arc(B,pbc,pab)+"Z");
+    var D={
+      lead:{q:"“Who you want to be”",big:"Leaders",t:"Leadership perspective: interviews with the group's leadership."},
+      people:{q:"“Who you really are”",big:"124",t:"Our people perspective: 124 people from various ventures."},
+      market:{q:"“Who people think you are”",big:"1,144",t:"People perspective: 1,144 people who had at least one touchpoint with Snapp Group."}
+    };
+    function sel(k){
+      $$("#vsvg .c").forEach(function(c){c.classList.toggle("sel",c.getAttribute("data-k")===k);});
+      $$("#vSeg button").forEach(function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-k")===k));});
+      $("#vQ").textContent=D[k].q;$("#vBig").textContent=D[k].big;$("#vT").textContent=D[k].t;
+    }
+    $$("#vsvg .c").forEach(function(c){var k=c.getAttribute("data-k");c.addEventListener("click",function(){sel(k);});c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();sel(k);}});});
+    $$("#vSeg button").forEach(function(b){b.addEventListener("click",function(){sel(b.getAttribute("data-k"));});});
+    sel("people");
+  })();
+
+  /* Act 2 word cloud: tiers follow the sizes in the deck's cloud (1 = largest) */
+  (function(){
+    var W=[["freedom to be yourself",4],["transparent environment",5],["technical team",4],["job offer",4],["startup environment",4],["work-life balance",3],["résumé boost",4],["e-commerce",5],["organizational culture",3],["data-driven",3],["remote work",4],["challenge",4],["mentorship",5],["job security",4],["learning opportunities",1],["food business",5],["flexible hours",4],["recommendation",5],["product design",4],["cutting-edge tech",4],["innovation",2],["technology",3],["company scale",4],["structured process",4],["teamwork",5],["FMCG",5],["creativity",3],["career growth",2],["gender inclusive",4],["supportive environment",4],["first job",4],["online retail",4],["job opportunity",5],["dynamic team",4],["work culture",5],["professional environment",3],["workplace energy",3],["Snapp brand",4],["tourism",5],["networking",5],["internship",5],["fintech",5],["friend referral",4],["management",5],["reputation",4],["big company",5],["personal growth",4],["salary",5],["diverse experiences",5],["internal promotion",4]];
+    var w=$("#wcloud");W.forEach(function(x){var s=document.createElement("span");s.className="t"+x[1];s.textContent=x[0];w.appendChild(s);});
+  })();
+
+  /* Act 2 pillars: tabs, bilingual toggle, and a painting that gains one layer per pillar */
+  (function(){
+    var P=[
+      {id:"lead",n:"Lead with Purpose",subs:["Work with Meaning","Drive with Data","Feedforward to Empower"],fa:"متمایز راهبری می‌کنیم با…",fas:["معنا بخشیدن به کار","رویکرد داده‌محور","بازخورد آینده‌نگر"],
+       ah:"Purpose in Action",a:"At Snapp Group, leading with purpose is like crafting a masterpiece: every action contributes to a shared vision with clarity and intent. By leveraging insights and focusing on possibilities ahead, we empower individuals to grow and lead with confidence. Our data-driven approach adds precision to decisions, while collaboration fuels a culture of progress.",
+       bh:"Purpose Behind the Masterpiece",b:"Imagine a painter starting a masterpiece, where every brushstroke is filled with purpose. As the painting grows, the painter adjusts and improves each layer, turning ideas into reality.",cap:"Layer 1 of 4 · the first purposeful strokes"},
+      {id:"create",n:"Create the Firsts",subs:["Discover Original Ideas","Pioneer in Innovation","Explore the Extreme"],fa:"اولین‌ها را خلق می‌کنیم با…",fas:["کشف ایده‌های اصیل","پیشگامی در نوآوری","کاوش فرای مرزها"],
+       ah:"Creation in Action",a:"“Create the Firsts” reflects our drive to lead, think boldly and redefine boundaries. More than starting something new, it is about developing a culture of creativity and collaboration, where every operational unit adds its unique vision to a shared mission.",
+       bh:"Creativity Behind the Masterpiece",b:"Now, picture the canvas evolving further, as bold new colors are added with each operational unit's unique touch. Some strokes are precise, guided by a clear vision, while others are daring and experimental, pushing the boundaries of possibility.",cap:"Layer 2 of 4 · bold new colors"},
+      {id:"grow",n:"Grow with Experience",subs:["Work with Professionals","Learn from Others","Contribute to Future"],fa:"از تجربه‌هایمان رشد می‌سازیم با…",fas:["کار با حرفه‌ای‌ترین‌ها","یادگیری از یکدیگر","اثرگذاری در آینده"],
+       ah:"Growth in Action",a:"For us, growth is more than progress. It is about gaining insights, exchanging knowledge and shaping what lies ahead. Working alongside experts, we build our capabilities. Learning from peers fosters a culture where everyone grows together.",
+       bh:"Growth Behind the Masterpiece",b:"Each color adds its unique qualities to the canvas. As each stroke blends into the next, the colors enrich one another, growing in depth and vibrancy.",cap:"Layer 3 of 4 · colors blending into each other"},
+      {id:"harmony",n:"Believe in Harmony",subs:["Collaborate with Respect","Adapt with Agility","Appreciate by Acting"],fa:"به هم‌راهی باور داریم با…",fas:["احترام در همکاری","پویایی در سازگاری","قدردانی در عمل"],
+       ah:"Harmony in Action",a:"A shared belief in the future emerges from how we connect, adapt and take meaningful action together. A cooperative spirit creates a space where every voice is valued and every contribution matters. When we act with appreciation, we bring ideas to life and recognize the efforts that drive progress.",
+       bh:"Harmony Behind the Masterpiece",b:"Finally, imagine a canvas where each color is added with care, blending seamlessly to create harmony in every stroke. Within this canvas lives more than effort: a shared promise, unfolding into a masterpiece we are building as one.",cap:"Layer 4 of 4 · one thread holds every color"}
+    ];
+    var tabs=$("#pTabs"),lang="en",cur=0;
+    // Painting layers
+    var svg=$("#paint"),layers=[];
+    for(var k=0;k<4;k++){var g=el("g",{},svg);layers.push(g);}
+    function st(g,d,c,w,o){el("path",{d:d,fill:"none",stroke:c,"stroke-width":w,"stroke-linecap":"round",opacity:o},g);}
+    // 1: thin purposeful sketch lines
+    st(layers[0],"M30 130 C90 60 150 60 210 110","var(--ink)",2.5,.8);st(layers[0],"M120 40 C180 70 250 40 330 70","var(--ink)",2.5,.8);st(layers[0],"M200 150 C250 120 300 140 370 110","var(--ink)",2.5,.8);
+    // 2: bold colors
+    [["M40 60 C90 40 140 70 190 50",2],["M210 40 C260 30 300 60 360 40",6],["M60 150 C110 120 160 150 210 130",10],["M240 140 C280 110 330 150 370 130",3],["M150 100 C190 80 230 110 280 90",8]].forEach(function(s){st(layers[1],s[0],V[s[1]],18,.85);});
+    // 3: overlapping, blended strokes
+    [["M50 100 C110 80 170 120 230 95",4],["M90 115 C150 90 210 130 270 105",9],["M170 70 C220 60 270 90 330 75",0],["M120 40 C160 70 200 60 240 75",11],["M260 110 C300 95 330 120 360 100",5]].forEach(function(s){st(layers[2],s[0],V[s[1]],22,.5);});
+    // 4: one thread with twelve beads
+    var th=el("path",{d:"M20 120 C90 40 150 160 210 95 S330 50 380 100",fill:"none",stroke:"var(--ink)","stroke-width":2.5},layers[3]);
+    var L=th.getTotalLength();for(var b=0;b<12;b++){var p=th.getPointAtLength(L*(b+.5)/12);el("circle",{cx:p.x.toFixed(1),cy:p.y.toFixed(1),r:7,fill:V[b],stroke:"var(--surface)","stroke-width":2},layers[3]);}
+
+    P.forEach(function(p,i){
+      var b=document.createElement("button");b.type="button";b.className="ptile";b.setAttribute("role","tab");b.id="pt-"+p.id;b.setAttribute("aria-controls","pPanel");
+      b.innerHTML='<svg aria-hidden="true"><use href="#ic-'+p.id+'"/></svg>';b.appendChild(document.createTextNode(p.n));
+      b.addEventListener("click",function(){show(i);});
+      b.addEventListener("keydown",function(e){var n=null;if(e.key==="ArrowRight")n=(i+1)%4;if(e.key==="ArrowLeft")n=(i+3)%4;if(n!==null){e.preventDefault();show(n);tabs.children[n].focus();}});
+      tabs.appendChild(b);
+    });
+    function render(){
+      var p=P[cur],fa=lang==="fa";
+      $("#pIcon").setAttribute("href","#ic-"+p.id);$("#pName").textContent=p.n;
+      var h=$("#pFaHead");h.hidden=!fa;h.textContent=p.fa;
+      var ul=$("#pSubs");ul.innerHTML="";ul.classList.toggle("fa",fa);
+      (fa?p.fas:p.subs).forEach(function(s){var li=document.createElement("li");li.textContent=s;ul.appendChild(li);});
+      $("#pActH").textContent=p.ah;$("#pAct").textContent=p.a;$("#pBehH").textContent=p.bh;$("#pBeh").textContent="“"+p.b+"”";$("#paintCap").textContent=p.cap;
+      layers.forEach(function(g,k){g.classList.toggle("off",k>cur);});
+      $$(".ptile",tabs).forEach(function(t,k){t.setAttribute("aria-selected",String(k===cur));t.tabIndex=k===cur?0:-1;});
+      $("#pPanel").setAttribute("aria-labelledby","pt-"+p.id);
+    }
+    function show(i){cur=i;render();}
+    $$(".lang button").forEach(function(b){b.addEventListener("click",function(){lang=b.getAttribute("data-l");$$(".lang button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b));});render();});});
+    render();
+  })();
+
+  /* Act 3 tiles */
+  (function(){
+    var VEN=[["Snapp Cab","cab","#00E261","https://career.snapp.ir/"],["Snapp Food","food","#E60080","https://careers.snappfood.ir/"],["Snapp Market","market","#FF600A","https://careers.snappgroup.net/en/jobs/market"],["Snapp Pay","pay","#008EFA","https://career.hrcando.ir/co/SnappPay"],["Snapp Shop","shop","#AE00B9","https://careers.snappgroup.net/en/jobs/shop"],["Snapp Box","box","#00E261","https://careers.snappgroup.net/en/jobs/box"],["Snapp Trip","trip","#E5282E","https://careers.snapptrip.com/"],["Snapp Kitchen","kitchen","#E60080","https://snapp.kitchen/jobs"],["Snapp Doctor","doctor","#35C2F2","https://careers.snappgroup.net/en/jobs/doctor"],["Snapp Supply","supply","#FCC31C","https://careers.snapp.supply/"],["Snapp Store","store","#07B0A9","https://careers.snappgroup.net/en/jobs/store"],["Snapp Barcode","barcode","#274184","https://careers.snappgroup.net/en/jobs/barcode"]];
+    var t=$("#tiles"), det=$("#vDetail"), bd=$("#bDots");
+    function show(i){
+      var v=VEN[i], n=(i<9?"0":"")+(i+1);
+      det.style.setProperty("--vc",v[2]);$("#vTag").textContent="Venture "+n+" of 12";
+      $("#vName").textContent=v[0];$("#vLink").href=v[3];
+    }
+    VEN.forEach(function(v,i){
+      var dot=document.createElement("i");dot.style.background=v[2];bd.appendChild(dot);
+      var b=document.createElement("button");b.type="button";b.className="tile";b.style.setProperty("--vc",v[2]);
+      b.innerHTML='<img src="assets/logos/'+v[1]+'.svg" alt="" loading="lazy" width="302" height="302">';
+      b.setAttribute("aria-label",v[0]);b.setAttribute("aria-pressed",i===0?"true":"false");
+      b.addEventListener("click",function(){
+        $$(".tile",t).forEach(function(x){x.setAttribute("aria-pressed","false");});b.setAttribute("aria-pressed","true");
+        show(i);
+      });
+      t.appendChild(b);
+    });
+    show(0);
+  })();
+
+  /* Act 6 tabs */
+  (function(){
+    var tabs=$$('[role="tab"]');
+    function act(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute("aria-selected",String(on));x.tabIndex=on?0:-1;$("#"+x.getAttribute("aria-controls")).hidden=!on;});
+      if(focus)t.focus();var p=$("#"+t.getAttribute("aria-controls"));replay(p);}
+    tabs.forEach(function(t,i){t.addEventListener("click",function(){act(t);});
+      t.addEventListener("keydown",function(e){var n=null;if(e.key==="ArrowRight")n=tabs[(i+1)%tabs.length];if(e.key==="ArrowLeft")n=tabs[(i-1+tabs.length)%tabs.length];if(e.key==="Home")n=tabs[0];if(e.key==="End")n=tabs[tabs.length-1];if(n){e.preventDefault();act(n,true);}});});
+  })();
+  function replay(node){if(reduce||!node)return;node.classList.remove("play");void node.offsetWidth;node.classList.add("play");}
+
+  /* Play charts once when they enter view (they rest fully drawn) */
+  if(!reduce && "IntersectionObserver" in window){
+    var po=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){replay(e.target);po.unobserve(e.target);}});},{threshold:.35});
+    $$("#rankPanel,#p-boot,#p-fin").forEach(function(n){po.observe(n);});
+  }
+
+  /* Rail */
+  (function(){
+    var acts=$$(".act"), links=$$(".rail a"), now=$("#railNow"), fill=$("#railFill");
+    function update(){
+      var mid=window.innerHeight*.4, cur=0;
+      acts.forEach(function(a,i){if(a.getBoundingClientRect().top<mid)cur=i+1;});
+      links.forEach(function(l,i){l.classList.toggle("done",i+1<cur);l.classList.toggle("cur",i+1===cur);if(i+1===cur)l.setAttribute("aria-current","step");else l.removeAttribute("aria-current");});
+      var a=acts[Math.max(0,cur-1)];
+      now.textContent= cur===0?"Start · 6 acts":"Act "+cur+" · "+a.getAttribute("data-name");
+      var ol=fill.parentNode, first=links[0].querySelector("i"), target=links[Math.max(0,cur-1)].querySelector("i");
+      var o=ol.getBoundingClientRect(), f=first.getBoundingClientRect(), t=target.getBoundingClientRect();
+      fill.style.width= cur===0?"0px":Math.max(0,(t.left+t.width/2)-(f.left+f.width/2))+"px";
+    }
+    var ticking=false;
+    window.addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(function(){update();ticking=false;});}},{passive:true});
+    window.addEventListener("resize",update);
+    update();
+  })();
+
+  /* Copy */
+  $$("[data-copy]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var node=document.getElementById(b.getAttribute("data-copy")), txt=node.textContent.trim();
+      function done(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy";},1600);}
+      function fallback(){var r=document.createRange();r.selectNodeContents(node);var s=window.getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected";setTimeout(function(){b.textContent="Copy";},1600);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,fallback);}else fallback();
+    });
+  });
+})();
+</script>
+</body>
+</html>
