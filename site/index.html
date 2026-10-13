@@ -443,7 +443,6 @@ a.fact:hover{border-color:var(--ac)}
 .fitlist{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:18px;background:var(--surface);overflow:hidden}
 .fitrow{display:grid;grid-template-columns:minmax(0,1.05fr) 132px minmax(0,1.6fr) 118px;gap:18px;align-items:center;padding:16px 20px;border-bottom:1px solid var(--line)}
 .fitrow:last-child{border-bottom:0}
-.fitlist.plain .fitrow{grid-template-columns:minmax(0,1.05fr) 132px minmax(0,1.6fr)}
 .fitrow h3{font:700 1rem/1.3 var(--f-body);letter-spacing:0}
 .fitrow p{font-size:.9rem;color:var(--ink-2)}
 .thr{display:flex;align-items:center;gap:0}
@@ -522,7 +521,6 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
   .cats{grid-template-columns:repeat(3,minmax(0,1fr))}
   .film{grid-template-columns:repeat(2,minmax(0,1fr))}
   .fitrow{grid-template-columns:minmax(0,1fr) auto;gap:8px 16px}
-  .fitlist.plain .fitrow{grid-template-columns:minmax(0,1fr)}
   .fitrow h3{grid-column:1}
   .fitrow .pill{grid-column:2;grid-row:1}
   .fitrow .thr{grid-column:1/-1}
@@ -687,7 +685,6 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 2v12M3 9l5 5 5-5"/></svg></a>
           <button class="btn" type="button" data-guide-start>
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="m10.8 5.2-1.7 3.9-3.9 1.7 1.7-3.9z"/></svg>Guide me through it</button>
-          <a class="btn" href="#fit">What I bring</a>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true">
@@ -1171,31 +1168,6 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
     </div>
   </section>
 
-  <!-- FIT -->
-  <section class="block" id="fit" aria-labelledby="fith">
-    <h2 id="fith">What I bring, tied to the thread</h2>
-    <p class="lede">Each bead links to the proof.</p>
-    <ol class="fitlist plain">
-      <li class="fitrow"><h3>University partnerships and career fairs</h3><span class="thr"><a href="#act-5" style="--c:var(--v11)" aria-label="Chapter 5">5</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Three fairs, #5 → #2 of 50. Polaris across four universities.</p></li>
-      <li class="fitrow"><h3>Student events, start to finish</h3><span class="thr"><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Bootcamp end to end: 250 → 33 → 4 hires. Finance Talk for ~300 students.</p></li>
-      <li class="fitrow"><h3>Local strategy and budget</h3><span class="thr"><a href="#act-2" style="--c:var(--v3)" aria-label="Chapter 2">2</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Group EVP plan. Finance Talk delivered on 70% of budget.</p></li>
-      <li class="fitrow"><h3>Campaigns and materials</h3><span class="thr"><a href="#act-4" style="--c:var(--v7)" aria-label="Chapter 4">4</a><a href="#act-5" style="--c:var(--v11)" aria-label="Chapter 5">5</a><a href="#act-6" style="--c:var(--v4)" aria-label="Chapter 6">6</a></span><p>Booths, slogans, LinkedIn for every event, landing pages.</p></li>
-      <li class="fitrow"><h3>Excel and data analysis</h3><span class="thr"><a href="#act-2" style="--c:var(--v3)" aria-label="Chapter 2">2</a><a href="#act-3" style="--c:var(--v9)" aria-label="Chapter 3">3</a><a href="#act-4" style="--c:var(--v7)" aria-label="Chapter 4">4</a></span><p>1,268-person EVP research, daily site report, quarterly goals.</p></li>
-      <li class="fitrow"><h3>Coordination across brands</h3><span class="thr"><a href="#act-1" style="--c:var(--v1)" aria-label="Chapter 1">1</a><a href="#act-3" style="--c:var(--v9)" aria-label="Chapter 3">3</a></span><p>Twelve ventures into one brand, page and booth.</p></li>
-      <li class="fitrow"><h3>Languages</h3><span class="thr"></span><p>English, Turkish: professional. Romanian: A2, learning.</p></li>
-    </ol>
-  </section>
-
-  <!-- 90 DAYS -->
-  <section class="block" id="plan" aria-labelledby="planh">
-    <h2 id="planh">Same thread, new canvas: my first 90 days</h2>
-    <ol class="plan3">
-      <li style="--c:var(--v1)"><span class="mono">Days 1–30</span><h3>Ask</h3><p class="echo">Like chapter 1 · the blank canvas</p><ul><li>Meet the team and the talent leads</li><li>Learn the EVP, brand rules, approvals</li><li>Map universities, fairs, vendors, last year's budget</li></ul></li>
-      <li style="--c:var(--v3)"><span class="mono">Days 31–60</span><h3>Build</h3><p class="echo">Like chapters 2–4 · palette, frame, layers</p><ul><li>A local plan and budget, aligned with the wider brand</li><li>Excel scorecard: cost per résumé and per hire</li><li>Refresh campus materials within the brand</li></ul></li>
-      <li style="--c:var(--v11)"><span class="mono">Days 61–90</span><h3>Meet</h3><p class="echo">Like chapters 5–6 · exhibition, deepen</p><ul><li>Run the first student event, report on the scorecard</li><li>Share what worked with the wider team</li><li>Propose next year's partner calendar</li></ul></li>
-    </ol>
-  </section>
-
   <!-- CONTACT -->
   <section class="contact" id="contact" aria-labelledby="ch">
     <div>
@@ -1597,8 +1569,6 @@ footer{padding-block:40px 56px;color:var(--ink-2);font-size:.875rem;display:grid
       {g:6,t:"#uniPanel .eps",v:"#polVid",c:"var(--v4)",ch:"Colors that deepen · optional",h:"Switch to <b>Story 2</b>",p:"Two graduates, in their own words.",
         done:function(){return pressedAt("#uniPanel .eps button",1);},ok:"Press play whenever you like."},
       {g:6,r:1,t:"#act-6 .kept",c:"var(--v4)",ch:"Colors that deepen",h:"The promise, kept",p:"Chapter 2's pillar, proven here."},
-      {g:7,r:1,t:"#fit",c:"var(--accent)",ch:"What I bring",h:"Each line, tied to a chapter",p:"Tap a numbered bead for the proof."},
-      {g:7,r:1,t:"#plan",c:"var(--accent)",ch:"A new canvas",h:"My first 90 days",p:"The same moves, on a new team."},
       {g:7,r:1,t:"#contact",c:"var(--accent)",ch:"The end",h:"Let's talk",p:"Copy email or phone in one tap.",last:true}
     ];
     // Remembers that the visitor answered the first-visit popup (v2: earlier visitors get it once more).
